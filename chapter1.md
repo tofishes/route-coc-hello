@@ -34,42 +34,42 @@ route-coc是基于express.js构建的，并且添加了express.js依赖，所以
 
   hello.js写入以下路由配置：
 
-```
-module.exports = {
-  '/hello, /hello/:name': {
-    'get': {
-      handle(data, req) {
-        return {
-          'username': req.param.name
-        };
-      },
-      view: 'hello'
+  ```
+  module.exports = {
+    '/hello, /hello/:name': {
+      'get': {
+        handle(data, req) {
+          return {
+            'username': req.param.name
+          };
+        },
+        view: 'hello'
+      }
     }
-  }
-};
-```
+  };
+  ```
 
-hello.swig写入以下内容：
+  hello.swig写入以下内容：
 
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>hello page - route-coc</title>
-</head>
-<body>
-  <h3>Hi, this is a hello page with route-coc.</h3>
-  {% if username %}
-  <p>get name '{{ username }}' form `router handle` method.</p>
-  {% endif %}
+  ```
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>hello page - route-coc</title>
+  </head>
+  <body>
+    <h3>Hi, this is a hello page with route-coc.</h3>
+    {% if username %}
+    <p>get name '{{ username }}' form `router handle` method.</p>
+    {% endif %}
 
-  {% if request.param.name %}
-  <p>get name '{{ request.param.name }}' form `request.param.name` with inner object request.</p>
-  {% endif %}
-</body>
-</html>
-```
+    {% if request.param.name %}
+    <p>get name '{{ request.param.name }}' form `request.param.name` with inner object request.</p>
+    {% endif %}
+  </body>
+  </html>
+  ```
 
 6. OK! 再次启动app: node app.js，分别访问：
 http://localhost:8080/hello,
