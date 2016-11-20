@@ -14,8 +14,7 @@ route-coc已经规定好 拦截器-路由-页面渲染 这样的一个流程，�
 ##### 参数，因为都是一个对象，因此使用单数形式，而非复数
 * query: get请求地址?后跟的参数，req.query
 * body: post请求体参数，req.body
-* param: 路由中定义的参数，req.param
-* param将被分别合并到req.query, req.body
+* param: 路由中定义的参数，req.param <br>param将被分别合并到req.query, req.body
 
 [![Build Status](https://travis-ci.org/tofishes/route-coc.svg?branch=master)](http://travis-ci.org/tofishes/route-coc)
 [![Dependency Status](https://gemnasium.com/tofishes/route-coc.svg)](https://gemnasium.com/tofishes/route-coc)
