@@ -1,5 +1,5 @@
 # Summary
 
 * [简介](README.md)
-* [hello world](chapter1.md)
+* [开始使用](chapter1.md)
 
