@@ -33,7 +33,7 @@ route-coc是基于express.js构建的，并且添加了express.js依赖，所以
 
    即可启动一个暂无任何路由配置的server。<br>当然暂无任何功能。
    
-5. 添加view和router配置。
+5. **添加view和router配置。**
 
    在routers目录下建立hello.js, views目录下建立hello.swig。
 
@@ -76,8 +76,8 @@ route-coc是基于express.js构建的，并且添加了express.js依赖，所以
   </html>
   ```
 
-6. OK! 再次启动app: node app.js，分别访问：
-http://localhost:8080/hello,
+6. **OK! 再次启动app: node app.js，分别访问：**
+http://localhost:8080/hello<br>
 http://localhost:8080/hello/lily
-看看页面呈现吧。 
+<br>看看页面呈现吧。 
 
