@@ -16,6 +16,22 @@ route-coc已经规定好 拦截器-路由-页面渲染 这样的一个流程，�
 * body: post请求体参数，req.body
 * param: 路由中定义的参数，req.param <br>
   param将被分别合并到req.query, req.body
+  
+##### 内置的工作流程目前有：
+
+```
+[
+  "pageInfo",
+  "matchRouter",
+  "initHttpRequest",
+  "requestProxy",
+  "handleInterceptor",
+  "handleRouter",
+  "runTask",
+  "getViewPath",
+  "render"
+]
+```
 
 [![Build Status](https://travis-ci.org/tofishes/route-coc.svg?branch=master)](http://travis-ci.org/tofishes/route-coc)
 [![Dependency Status](https://gemnasium.com/tofishes/route-coc.svg)](https://gemnasium.com/tofishes/route-coc)
