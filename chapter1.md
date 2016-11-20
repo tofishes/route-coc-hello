@@ -12,6 +12,7 @@ route-coc是基于express.js构建的，并且添加了express.js依赖，所以
 ![项目目录](project-dir.png)
 
 3. 在app.js中添加如下代码
+
 ```
 const express = require('express');
 const coc = require('route-coc');
@@ -47,7 +48,9 @@ module.exports = {
   }
 };
 ```
+
 hello.swig写入以下内容：
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -68,6 +71,8 @@ hello.swig写入以下内容：
 </html>
 ```
 
-6. OK! 再次启动app: node app.js，
-分别访问：http://localhost:8080/hello, http://localhost:8080/hello/lily。看看页面呈现吧。 
+6. OK! 再次启动app: node app.js，分别访问：
+http://localhost:8080/hello,
+http://localhost:8080/hello/lily
+看看页面呈现吧。 
 
