@@ -32,6 +32,7 @@ app.listen(port, () => {
 5. 添加view和router配置。在routers目录下建立hello.js, views目录下建立hello.swig。
 
 hello.js写入以下路由配置：
+
 ```
 module.exports = {
   '/hello, /hello/:name': {
