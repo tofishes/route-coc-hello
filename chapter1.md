@@ -28,4 +28,42 @@ app.listen(port, () => {
 });
 ```
 
-4. 运行node app.js，即可启动一个暂无任何路由配置的server。
+4. 运行node app.js，即可启动一个暂无任何路由配置的server。当然暂无任何功能。
+5. 添加view和router配置。在routers目录下建立hello.js, views目录下建立hello.swig。
+
+hello.js写入以下路由配置：
+```
+module.exports = {
+  '/hello, /hello/:name': {
+    'get': {
+      handle(data, req) {
+        return {
+          'username': req.param.name
+        };
+      },
+      view: 'hello'
+    }
+  }
+};
+```
+hello.swig写入以下内容：
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hello page - route-coc</title>
+</head>
+<body>
+  <h3>Hi, this is a hello page with route-coc.</h3>
+  {% if username %}
+  <p>get name '{{ username }}' form `router handle` method.</p>
+  {% endif %}
+
+  {% if request.param.name %}
+  <p>get name '{{ request.param.name }}' form `request.param.name` with inner object request.</p>
+  {% endif %}
+</body>
+</html>
+```
+
