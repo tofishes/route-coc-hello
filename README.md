@@ -33,6 +33,8 @@ route-coc已经规定好 拦截器-路由-页面渲染 这样的一个流程，�
 ]
 ```
 
+通过before, after方法可以往以上默认流程加入自定义的一些处理流程。
+
 [![Build Status](https://travis-ci.org/tofishes/route-coc.svg?branch=master)](http://travis-ci.org/tofishes/route-coc)
 [![Dependency Status](https://gemnasium.com/tofishes/route-coc.svg)](https://gemnasium.com/tofishes/route-coc)
 [![bitHound Score](https://www.bithound.io/github/tofishes/route-coc/badges/score.svg)](https://www.bithound.io/github/tofishes/route-coc)
