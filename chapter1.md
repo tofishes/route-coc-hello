@@ -10,3 +10,4 @@ route-coc是基于express.js构建的，并且添加了express.js依赖，所以
 建立约定的相关配置目录：routers、interceptors、views，创建启动文件app.js, 之后目录如下图所示：
 
 ![项目目录](project-dir.png)
+
