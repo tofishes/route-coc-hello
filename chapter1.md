@@ -1,7 +1,7 @@
 # 开始使用
 建立项目目录并安装
 `
-take route-coc-hello
+take route-coc-hello # 创建目录并进入
 npm init # 初始化一个工程
 npm install route-coc --save # 安装route-coc并保存
 `
