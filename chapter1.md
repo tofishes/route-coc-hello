@@ -81,3 +81,5 @@ http://localhost:8080/hello<br>
 http://localhost:8080/hello/lily
 <br>看看页面呈现吧。 
 
+####注：
+* route-coc本质是express的middleware实现，因此express本身的各种API也可以使用。
