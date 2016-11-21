@@ -17,7 +17,11 @@ route-coc已经规定好 拦截器-路由-页面渲染 这样的一个流程，�
 * param: 路由中定义的参数，req.param <br>
   param将被分别合并到req.query, req.body
   
-##### Stage, 工作流程的一个场景，每个stage完成一件事并可以产出特定结果。可以用before,after方法对stage添加预处理流程或后处理流程。目前内置的工作流程有：
+##### Stage, 工作流程的一个场景，每个stage完成一件事并可以产出特定结果。
+
+可以用before,after方法对stage添加预处理流程或后处理流程。
+
+目前内置的工作流程有：
 
 ```
 [
