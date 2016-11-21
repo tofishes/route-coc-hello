@@ -12,7 +12,7 @@
 | 视图 | {{ app.request }} | -> | {{ request }} |
 | 数据 | - | -> | 接口数据均挂在res.apiData下 |
 | 流程 | - | -> | stage filter(cocer.before, cocer.after) |
-|  | - | -> | res.forward, 服务器内跳转，可保持浏览器地址不变 |
+|  | - | -> | res.forward, 服务器内跳转，可保持浏览器地址不变，区别于res.redirect |
 |  | - | -> | interceptor, 拦截器，重要的改变 |
 | 目录 | routes | -> | routers |
 |  | - | -> | interceptors, 拦截器目录 |
