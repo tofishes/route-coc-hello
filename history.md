@@ -35,3 +35,4 @@
 ### issues
 
 1. swig不能设置locals参数，否则渲染模板出现 obj.hasOwnProperty is undefined
+
