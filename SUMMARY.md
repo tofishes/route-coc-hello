@@ -2,7 +2,7 @@
 
 * [简介](README.md)
 * [开始使用](chapter1.md)
-* [cocer参数](route-coc参数.md)
+* [cocer和Stage](route-coc参数.md)
 * [内置标准Stages介绍](内置标准stages介绍.md)
 * [Router路由配置](router路由配置.md)
 * [Interceptor拦截器配置](interceptor拦截器配置.md)

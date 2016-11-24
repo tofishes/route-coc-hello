@@ -19,7 +19,7 @@ route-coc是基于express.js构建的，并且添加了express.js依赖，所以
   const log = require('t-log');
 
   const app = express();
-  const cocer = coc(app);
+  const stage = coc(app);
 
   const port = 8080;
   app.listen(port, () => {
