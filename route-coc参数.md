@@ -33,6 +33,9 @@ options =  {
 
 默认值定义为：
 ```
-const pwd = process.cwd(); // 当前运行app.js所在目录const defaultRouterDir = `${pwd}/routers`; // 同目录下的routersconst defaultInterceptorDir = `${pwd}/interceptors`; // 同上const defaultViewDir = `${pwd}/views`; // 同上
+const pwd = process.cwd(); // 当前运行app.js所在目录
+const defaultRouterDir = `${pwd}/routers`; // 同目录下的routers
+const defaultInterceptorDir = `${pwd}/interceptors`; // 同上
+const defaultViewDir = `${pwd}/views`; // 同上
 
 ```
