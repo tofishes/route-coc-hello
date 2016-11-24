@@ -38,7 +38,7 @@ const defaultRouterDir = `${pwd}/routers`; // 同目录下的routers
 const defaultInterceptorDir = `${pwd}/interceptors`; // 同上
 const defaultViewDir = `${pwd}/views`; // 同上
 
-// 接口数据缓存方法接口定义，需按以下定义实现(伪代码)：
+// 接口数据缓存方法的接口定义，需按以下定义实现(伪代码)：
 interface apiDataCache(key, value);
 // 设置及获取
 get apiDataCache(key);
