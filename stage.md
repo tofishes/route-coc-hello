@@ -50,6 +50,7 @@ stage.before('render', (req, res, next) => {
 ```
 const stage = coc(app);
 stage.after('handleRouter', (req, res, next) => {
+  // 是否匹配到router
   console.log(req.router);
   next();
 });
