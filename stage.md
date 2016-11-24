@@ -48,7 +48,11 @@ stage.before('render', (req, res, next) => {
 
 例子2、得到某些流程处理结果：
 ```
-
+const stage = coc(app);
+stage.after('getViewPath', (req, res, next) => {
+  console.log(res.viewPath, res.viewExt, res.viewFile);
+  next();
+});
 ```
 
 例子3、接口统计信息：
