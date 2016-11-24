@@ -11,7 +11,7 @@
    * [handleInterceptor](handleinterceptor.md)
    * [handleRouter](handlerouter.md)
    * [runTask](runtask.md)
-   * getViewPath
+   * [getViewPath](getviewpath.md)
    * render
 * [扩展属性](内置标准stages介绍.md)
 * [Router路由配置](router路由配置.md)
