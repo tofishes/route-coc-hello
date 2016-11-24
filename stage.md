@@ -43,5 +43,10 @@ stage.before('render', (req, res, next) => {
   const consume = endTime - req.startTime;
   console.log('consume times: ', consume, 'ms');
   next();
-})
+});
+```
+
+例子2、得到某些流程处理结果：
+```
+
 ```
