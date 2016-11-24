@@ -15,7 +15,7 @@ coc完整的调用方式是：
 coc(app, options);
 ```
 
-调用coc可以传入以下参数，不传则以默认值代替：
+app是express app对象，options可以传以下配置，不传则以默认值代替：
 
 ```
 options =  { 
