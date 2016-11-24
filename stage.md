@@ -55,6 +55,7 @@ stage.after('handleRouter', (req, res, next) => {
   next();
 });
 stage.after('getViewPath', (req, res, next) => {
+  // 得到的模板路径，后缀等信息
   console.log(res.viewPath, res.viewExt, res.viewFile);
   next();
 });
