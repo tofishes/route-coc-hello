@@ -5,7 +5,7 @@
 const stage = coc(app);
 ```
 调用coc后返回一个stage实例，该实例是一个Stage对象实例。
-Stage是流程实现类，非常核心的一个功能类。
+Stage是流程实现类，非常核心的一个功能类(详见《Stage》章节)。
 
 ### coc参数
 
