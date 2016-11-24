@@ -4,7 +4,7 @@
 
 产生结果为 req.param, req.router。
 若router设置请求方法与http method不匹配，响应浏览器405 error。
-req.param会分别合并到req.query, req.body;
+req.param会被分别合并到req.query, req.body。
 
 查看结果：
 ```
