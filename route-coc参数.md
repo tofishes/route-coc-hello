@@ -31,7 +31,7 @@ options =  {
 
 ```
 
-默认值定义为：
+目录默认值定义为：
 ```
 const pwd = process.cwd(); // 当前运行app.js所在目录
 const defaultRouterDir = `${pwd}/routers`; // 同目录下的routers
