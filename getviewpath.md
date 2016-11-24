@@ -2,7 +2,7 @@
 
 从req.router或req.pathname获取视图模板路径。
 
-产生结果：res.viewPath, res.viewExt, res.viewFile
+产生结果：res.viewPath, res.viewExt, res.viewFile。
 
 查看结果：
 ```
