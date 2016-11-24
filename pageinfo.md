@@ -14,5 +14,11 @@ req.moduleName; // 根据请求路径产生的模块名
 以上结果用于在swig模板中调用：
 ```
 请求参数：{{ request.query }} {{ request.body }} {{ request.param }}
+浏览器： {{  }}
+```
+
+查看结果：
+```
+
 ```
 
