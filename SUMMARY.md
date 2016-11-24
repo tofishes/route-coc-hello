@@ -8,6 +8,7 @@
    * matchRouter
    * initHttpRequest
    * requestProxy
+   * handleInterceptor
 * [内置标准stages](内置标准stages介绍.md)
 * [Router路由配置](router路由配置.md)
 * [Interceptor拦截器配置](interceptor拦截器配置.md)
