@@ -7,8 +7,8 @@
 查看结果：
 ```
 const stage = coc(app);
-stage.after('handleRouter', (req, res, next) => {
-  console.log(req.router, req.apisTask);
+stage.after('matchRouter', (req, res, next) => {
+  console.log(req.router);
   next();
 });
 ```
