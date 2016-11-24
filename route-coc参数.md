@@ -47,7 +47,7 @@ PS: 自动渲染模板，是指未配置任何router时，访问 /page/a 时会�
 
 `mount`路径配置，指使用coc处理哪些路径下的请求，本质是 express app.use(mount, ()=>{})中的mount。
 
-接口数据缓存方法的接口定义，自定义的方法需按以下定义实现(伪代码)：
+`apiDataCache`接口数据缓存方法的接口定义，自定义的方法需按以下定义实现(伪代码)：
 ```
 interface apiDataCache(key, value);
 // 设置及获取
