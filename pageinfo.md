@@ -5,8 +5,8 @@
 pageInfo流程产生以下结果：
 
 ```
-res.locals.request = req;
-res.locals.app = req.app;
+res.locals.request = req; // 模板中可以直接引用到req对象
+res.locals.app = req.app; // 模板中可以直接引用到app对象
 req.browser; // 浏览器信息
 req.moduleName; // 根据请求路径产生的模块名
 ```
