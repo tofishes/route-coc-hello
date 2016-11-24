@@ -38,6 +38,13 @@ const defaultRouterDir = `${pwd}/routers`; // 同目录下的routers
 const defaultInterceptorDir = `${pwd}/interceptors`; // 同上
 const defaultViewDir = `${pwd}/views`; // 同上
 ```
+
+`viewExclude`参数的含义是排除自动渲染模板的目录，
+比如默认就是禁止直接访问 /views/include 目录下的模板文件。
+PS: 自动渲染模板，是指未配置任何router时，访问 /page/a 时会自动渲染 /views/page/a.swig 模板。
+
+stages配置一般不用动，高级定制才需要，确保已经深刻理解route-coc的工作机制。
+
 接口数据缓存方法的接口定义，自定义的方法需按以下定义实现(伪代码)：
 ```
 interface apiDataCache(key, value);
@@ -45,7 +52,3 @@ interface apiDataCache(key, value);
 get apiDataCache(key);
 set apiDataCache(key, value);
 ```
-
-`viewExclude`参数的含义是排除自动渲染模板的目录，
-比如默认就是禁止直接访问 /views/include 目录下的模板文件。
-PS: 自动渲染模板，是指未配置任何router时，访问 /page/a 时会自动渲染 /views/page/a.swig 模板。
