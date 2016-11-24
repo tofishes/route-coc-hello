@@ -6,7 +6,7 @@
 * [Stage](stage.md)
    * [pageInfo](pageinfo.md)
    * [matchRouter](matchrouter.md)
-   * initHttpRequest
+   * [initHttpRequest](inithttprequest.md)
    * requestProxy
    * handleInterceptor
    * handleRouter
