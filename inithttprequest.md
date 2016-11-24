@@ -13,3 +13,18 @@ stage.after('initHttpRequest', (req, res, next) => {
   next();
 });
 ```
+
+设置request参数：
+```
+cocer.before('initHttpRequest', (req, res, next) => {
+  const headers = {
+    'x-version': 1,
+    'x-token': 'some token' // or get it from req.cookies
+  };
+  
+  requestDefaults.headers = headers;
+  req.httpRequestConfig = requestDefaults;
+
+  next();
+});
+```
