@@ -1,6 +1,6 @@
 ### initHttpRequest
 
-初始化用于接口请求的request库。
+初始化用于接口请求的request库及api任务。
 
 initHttpRequest流程产生结果为 初始化 req.apisTask。
 
