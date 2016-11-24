@@ -14,7 +14,7 @@ stage.after('initHttpRequest', (req, res, next) => {
 });
 ```
 
-设置request参数(可用参数参见[request client](https://github.com/request/request))：
+设置request参数(可用参数参见[request文档](https://github.com/request/request))：
 ```
 // 演示https接口，自定义header等
 const requestDefaults = {
