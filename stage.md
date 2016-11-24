@@ -25,4 +25,19 @@ Stage提供的api如下：
 `stage.get(name)`: 获取一个属性。
 `stage.handle(req, res, next)`: 流程处理方法，核心方法。本质是一个express middleware。
 
-before|after方法应该是调用者经常使用的方法。
+before|after方法应该是调用者经常使用的方法。每个stage流程会有一些结果产出，可以用after对结果加工处理。
+
+例子1、记录耗时日志：
+```
+const stage = coc(app);
+stage.before('pageInfo', (req, res, next) => {
+  req.startTime = Date.now();
+  next();
+});
+stage.before('render', (req, res, next) => {
+  const endTime = Date.now();
+  const consume = endTime - req.startTime;
+  console.log('consume times: ', consume, 'ms');
+  next();
+})
+```
