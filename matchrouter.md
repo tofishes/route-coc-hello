@@ -9,7 +9,7 @@
 ```
 const stage = coc(app);
 stage.after('matchRouter', (req, res, next) => {
-  console.log(req.router);
+  console.log(req.router, req.param);
   next();
 });
 ```
