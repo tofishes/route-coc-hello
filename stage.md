@@ -14,7 +14,7 @@ Stage是流程实现类，非常核心的一个功能类。它负责执行一些
   "render"
 ]
 ```
-上面是各流程的**stageName**，stage提供的过滤器方法即是针对这些stageName使用。
+上面是各流程的**stageName**，stage提供的过滤器方法即是针对这些stageName使用，默认流程可以使用stage.stageNames获取。
 具体流程的说明请看子章节。coc(app)执行之后返回一个stage实例，可使用以下api方法。
 
 Stage提供的api如下：
