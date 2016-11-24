@@ -2,7 +2,7 @@
 
 初始化用于接口请求的request库。
 
-initHttpRequest流程产生结果为 req.apisTask。
+initHttpRequest流程产生结果为 初始化 req.apisTask。
 
 查看结果：
 ```
