@@ -9,7 +9,7 @@
    * [initHttpRequest](inithttprequest.md)
    * [requestProxy](requestproxy.md)
    * [handleInterceptor](handleinterceptor.md)
-   * handleRouter
+   * [handleRouter](handlerouter.md)
    * runTask
    * getViewPath
    * render
