@@ -8,7 +8,7 @@
    * [matchRouter](matchrouter.md)
    * [initHttpRequest](inithttprequest.md)
    * [requestProxy](requestproxy.md)
-   * handleInterceptor
+   * [handleInterceptor](handleinterceptor.md)
    * handleRouter
    * runTask
    * getViewPath
