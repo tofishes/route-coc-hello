@@ -7,7 +7,7 @@
    * [pageInfo](pageinfo.md)
    * [matchRouter](matchrouter.md)
    * [initHttpRequest](inithttprequest.md)
-   * requestProxy
+   * [requestProxy](requestproxy.md)
    * handleInterceptor
    * handleRouter
    * runTask
