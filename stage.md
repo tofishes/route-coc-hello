@@ -50,3 +50,18 @@ stage.before('render', (req, res, next) => {
 ```
 
 ```
+
+例子3、接口统计信息：
+```
+cocer.after('runTask', (req, res, next) => {
+  const apiInfo = res.apiInfo;
+
+  Object.keys(apiInfo).map(name => {
+    const info = apiInfo[name];
+    return log.info(info.method, info.api, info.consumeTime, 'ms');
+  });
+  log.warn('cost time: ', req.reqCircle.end());
+
+  next();
+});
+```
