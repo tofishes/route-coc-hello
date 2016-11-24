@@ -26,7 +26,8 @@ Stage提供的api如下：
 `stage.handle(req, res, next)`: 流程处理方法，核心方法。本质是一个express middleware。
 
 before|after方法应该是调用者经常使用的方法。每个stage流程会有一些结果产出，可以用after对结果加工处理。
-nextStage()是需要被执行的，否则无法流向下一个流程。除非在next()前做了响应(res.send等)。
+nextStage()是需要被执行的，否则无法流向下一个流程。除非在nextStage()前做了响应(res.send等)。
+
 方法中的nextStage不是express next引用，而是express next的一个封装。通过nextStage.origin来获取express next引用。
 
 例子1、记录耗时日志：
