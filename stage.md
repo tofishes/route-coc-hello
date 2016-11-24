@@ -49,6 +49,10 @@ stage.before('render', (req, res, next) => {
 例子2、得到某些流程处理结果：
 ```
 const stage = coc(app);
+stage.after('handleRouter', (req, res, next) => {
+  console.log(req.router);
+  next();
+});
 stage.after('getViewPath', (req, res, next) => {
   console.log(res.viewPath, res.viewExt, res.viewFile);
   next();
