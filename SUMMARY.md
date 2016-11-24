@@ -4,7 +4,7 @@
 * [开始使用](chapter1.md)
 * [coc](route-coc参数.md)
 * [Stage](stage.md)
-   * pageInfo
+   * [pageInfo](pageinfo.md)
    * matchRouter
    * initHttpRequest
    * requestProxy
