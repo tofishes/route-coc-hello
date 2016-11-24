@@ -19,6 +19,10 @@ req.moduleName; // 根据请求路径产生的模块名
 
 查看结果：
 ```
-
+const stage = coc(app);
+stage.after('pageInfo', (req, res, next) => {
+  console.log(req.browser, req.moduleName);
+  next();
+});
 ```
 
