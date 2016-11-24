@@ -2,7 +2,8 @@
 
 初始化用于接口请求的request库及api任务。
 
-产生结果： req.httpRequest, req.apisTask（空对象）。
+产生结果：req.httpRequest, req.apisTask（空对象）。
+
 使用stage.before('initHttpRequest')产生req.httpRequestConfig，用于配置request参数。
 
 查看结果：
