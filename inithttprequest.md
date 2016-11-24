@@ -16,6 +16,12 @@ stage.after('initHttpRequest', (req, res, next) => {
 
 设置request参数：
 ```
+const requestDefaults = {
+  'cert': fs.readFileSync(certFile), // 设置https证书
+  'strictSSL': false,
+  'timeout': 20 * 1000, // milliseconds
+  'json': true
+};
 cocer.before('initHttpRequest', (req, res, next) => {
   const headers = {
     'x-version': 1,
