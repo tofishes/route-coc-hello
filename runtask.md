@@ -1,5 +1,5 @@
 ### runTask
 
-执行req.apiTasks任务。
+执行req.apisTask任务。
 
 
