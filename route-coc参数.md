@@ -19,14 +19,20 @@ coc(app, options);
 
 ```
 options =  { 
-  routerDir = defaultRouterDir, // 路由目录 
+  routerDir = defaultRouterDir,           // 路由目录 
   interceptorDir = defaultInterceptorDir, // 拦截器目录
-  viewDir = defaultViewDir, 
-  viewExclude = ['**/include/**'], // 排除自动渲染模板的目录，采用glob匹配规则
-  stages = defaultStages, // 默认stage列表
-  mount = '/', // 程序挂载路径，类型符合express path examples
-  apiDataCache = memoryCache, // 接口数据缓存方法，默认存储于内存中
-  handleAPI = url => url // api地址预处理方法
+  viewDir = defaultViewDir,               // 视图模板目录        
+  viewExclude = ['**/include/**'],        // 排除自动渲染模板的目录，采用glob匹配规则
+  stages = defaultStages,                 // 默认stage列表 
+  mount = '/',                            // 程序挂载路径，类型符合express path examples
+  apiDataCache = memoryCache,             // 接口数据缓存方法，默认存储于内存中
+  handleAPI = url => url                  // api地址预处理方法
 }
+
+```
+
+默认值定义为：
+```
+const pwd = process.cwd(); // 当前运行app.js所在目录const defaultRouterDir = `${pwd}/routers`; // 同目录下的routersconst defaultInterceptorDir = `${pwd}/interceptors`; // 同上const defaultViewDir = `${pwd}/views`; // 同上
 
 ```
