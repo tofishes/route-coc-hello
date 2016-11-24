@@ -54,3 +54,5 @@ interface apiDataCache(key, value);
 get apiDataCache(key);
 set apiDataCache(key, value);
 ```
+
+`handleAPI`是对router.api地址的处理配置
