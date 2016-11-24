@@ -24,7 +24,7 @@ options =  {
   viewDir = defaultViewDir,               // 视图模板目录        
   viewExclude = ['**/include/**'],        // 排除自动渲染模板的目录，采用glob匹配规则
   stages = defaultStages,                 // 默认stage列表 
-  mount = '/',                            // 程序挂载路径，类型符合express path examples
+  mount = '/',                            // 程序挂载路径，默认为根路径，类型符合express path examples
   apiDataCache = memoryCache,             // 接口数据缓存方法，默认存储于内存中
   handleAPI = url => url                  // api地址预处理方法
 }
