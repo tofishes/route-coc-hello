@@ -23,7 +23,7 @@ const requestDefaults = {
   'timeout': 20 * 1000, // milliseconds
   'json': true
 };
-cocer.before('initHttpRequest', (req, res, next) => {
+stage.before('initHttpRequest', (req, res, next) => {
   const headers = {
     'x-version': 1,
     'x-token': 'some token' // or get it from req.cookies
