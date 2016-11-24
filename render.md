@@ -1,4 +1,6 @@
 ### render
 
 最终的渲染模板流程。
-该流程会排除coc options.exclude所配置的路径。
+该流程会排除coc options.viewExclude所配置的路径。
+
+产生结果：渲染模板页面到浏览器。若没有相应的模板文件被找到，回归到express next流程。
