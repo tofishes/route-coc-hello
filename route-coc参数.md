@@ -18,6 +18,7 @@ coc(app, options);
 调用coc可以传入以下参数，不传则以默认值代替：
 
 ```
-default options =  { routerDir = defaultRouterDir, // 路由目录 interceptorDir = defaultInterceptorDir, // 拦截器目录 viewDir = defaultViewDir, viewExclude = ['**/include/**'], // 排除自动渲染模板的目录, 使用glob模块的匹配规则 stages = defaultStages, // 默认stage列表 mount = '/', // 程序挂载路径，类型符合express path examples apiDataCache = memoryCache, // 接口数据缓存方法，默认存储于内存中 handleAPI = url => url // api地址预处理方法 }
+options =  { routerDir = defaultRouterDir, // 路由目录 interceptorDir = defaultInterceptorDir, // 拦截器目录 viewDir = defaultViewDir, viewExclude = ['**/include/**'], // 排除自动渲染模板的目录 stages = defaultStages, // 默认stage列表 mount = '/', // 程序挂载路径，类型符合express path examples apiDataCache = memoryCache, // 接口数据缓存方法，默认存储于内存中 handleAPI = url => url // api地址预处理方法
+}
 
 ```
