@@ -44,3 +44,6 @@ interface apiDataCache(key, value);
 get apiDataCache(key);
 set apiDataCache(key, value);
 ```
+
+`viewExclude`参数的含义是排除自动渲染模板的目录，比如默认就是禁止直接访问到 /views/include 目录下的模板文件。
+PS: 自动渲染模板，是指未配置任何router时，访问 /page/a 时会自动渲染 /views/page/a.swig 模板。
