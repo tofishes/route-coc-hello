@@ -23,5 +23,5 @@ Stage提供的api如下：
 `stage.after(stageName, (req, res, next) => {})`: 后置过滤器方法。往默认流程插入自定义流程。
 `stage.set(name, value)`: 设置一个属性。
 `stage.get(name)`: 获取一个属性。
-`stage.handle(req, res, next)`: 流程处理方法。
+`stage.handle(req, res, next)`: 流程处理方法，本质是一个express middleware。
 before|after方法应该是调用者经常使用的方法。
