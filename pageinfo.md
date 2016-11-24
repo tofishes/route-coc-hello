@@ -11,6 +11,19 @@ req.browser; // 浏览器信息
 req.moduleName; // 根据请求路径产生的模块名, 例如/member/center/follow, 模块名为member
 ```
 
+browser对象结构：
+```
+{
+  version,
+  mobile,
+  isWechat,
+  ie,
+  gecko,
+  webkit,
+  opera,
+}
+```
+
 以上结果用于在swig模板中调用：
 ```
 请求参数：{{ request.query }} {{ request.body }} {{ request.param }}
