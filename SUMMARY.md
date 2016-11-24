@@ -10,7 +10,7 @@
    * [requestProxy](requestproxy.md)
    * [handleInterceptor](handleinterceptor.md)
    * [handleRouter](handlerouter.md)
-   * runTask
+   * [runTask](runtask.md)
    * getViewPath
    * render
 * [扩展属性](内置标准stages介绍.md)
