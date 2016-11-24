@@ -21,6 +21,7 @@ Stage是流程实现类，非常核心的一个功能类。它负责执行一些
 Stage提供的api如下：
 `stage.before(stageName, (req, res, next) => {})`: 前置过滤器方法。往默认流程插入自定义流程。
 `stage.after(stageName, (req, res, next) => {})`: 后置过滤器方法。往默认流程插入自定义流程。
-`stage.set(name, value)`: 设置一个属性
-`stage.get(name)`: 获取一个属性
+`stage.set(name, value)`: 设置一个属性。
+`stage.get(name)`: 获取一个属性。
+`stage.handle(req, res, next)`: 流程处理方法。
 before|after方法应该是调用者经常使用的方法。
