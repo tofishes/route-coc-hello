@@ -3,7 +3,7 @@
 根据当前路径匹配router配置。
 
 产生结果为 req.param, req.router。
-若router设置请求方法与http method不匹配，响应浏览器405 error。
+若router设置请求方法与http method不匹配，响应浏览器405 Error。
 
 查看结果：
 ```
