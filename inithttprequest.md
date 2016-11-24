@@ -8,7 +8,7 @@ initHttpRequest流程产生结果为 req.apisTask（空对象）。
 ```
 const stage = coc(app);
 stage.after('initHttpRequest', (req, res, next) => {
-  console.log(req.router, req.apisTask);
+  console.log(req.httpRequest, req.apisTask);
   next();
 });
 ```
