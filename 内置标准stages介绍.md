@@ -19,14 +19,20 @@ app.set('handleAPI', handleAPI);
 #### 属性
 * req.stageIndex 流程索引
 * req.pathname 取代req.path
+* req.router 匹配到的router配置
+* req.
+
 * res.apiData 接口数据
 * res.apiInfo 接口信息
 * res.forwardSent forward跳转后，值为true
 * res.hasSent 代理转发后，值为true
+* res.viewPath 视图相对路径
+* res.viewExt 视图后缀
+* res.viewFile 视图物理文件地址;
 
 #### 方法
 * res.forward(routePath) 
   服务器内跳转，例如 res.forward('/news/100')，内部会跳转到 '/news/:id' 的route
 * next(error)
   下一个流程，是对express next的一个封装。stage内使用这个next()跳转流程。
-  next.origin() 是 express next()
+  next.origin() 是 express next()。
