@@ -63,7 +63,7 @@ moudle.exports = {
       const list = data.getList('data.list');
       return { list };
     },
-    'view': '/'
+    'view': 'route/page'
   }
   ```
   
