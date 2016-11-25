@@ -32,6 +32,8 @@ app.set('handleAPI', handleAPI);
 * res.viewPath 视图模板相对路径
 * res.viewExt 视图模板后缀
 * res.viewFile 视图模板物理文件地址;
+* res.locals.request = req
+* res.locals.app = req.app
 
 #### 方法
 * res.forward(routePath) 
