@@ -5,7 +5,7 @@
 // 一个router配置文件
 moudle.exports = {
   '/route/:param, /route, /route/two/:param': { // 允许多个逗号间隔的route
-    'get': {
+    'get': { // 请求方法设置 get|post
       'api': 'post:http://localhost:8080/api/comment/list'
       'name': 'comments',
       'cache': false,
