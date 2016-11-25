@@ -31,3 +31,6 @@ moudle.exports = {
 1. `'/route/*, /member/profile'`
 
   拦截器匹配路径，与router.route配置可以相同，但通常使用通配符 * 或 指定明确的路径。
+  
+2. router配置需指定请求方法，但是拦截器不需要，拦截器适应于所有请求方式。
+3. 
