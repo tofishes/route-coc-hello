@@ -1,6 +1,6 @@
 ## Router路由配置
 
-### 配置单元
+### 配置清单
 ```
 // 一个router配置文件
 moudle.exports = {
@@ -28,4 +28,4 @@ moudle.exports = {
 }
 ```
 
-以上为一个标准的配置单元，称为 router-meta
+以上为一个标准的配置文件
