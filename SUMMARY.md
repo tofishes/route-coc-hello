@@ -17,8 +17,8 @@
 * [Router路由配置](router路由配置.md)
 * [Interceptor拦截器配置](interceptor拦截器配置.md)
 * [场景实践](场景实践.md)
+* [Data valueChain](data_valuechain.md)
 * 完整的例子
 * [v1对比v2](v1dui_bi_v2.md)
 * [history](history.md)
-* [Data valueChain](data_valuechain.md)
 
