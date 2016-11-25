@@ -54,7 +54,7 @@ moudle.exports = {
       };
     },
     body(req, res) {
-      return {};
+      return req.body;
     },
     handle(data, req, res) {
       return data.getList('data.list');
