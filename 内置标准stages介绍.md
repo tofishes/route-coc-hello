@@ -22,6 +22,7 @@ app.set('handleAPI', handleAPI);
 * req.router 匹配到的router配置
 * req.interceptors 匹配到的拦截器
 * req.apisTask 接口任务
+* req.httpRequest 接口请求client
 
 * res.apiData 接口数据
 * res.apiInfo 接口信息
