@@ -57,7 +57,8 @@ moudle.exports = {
       return req.body;
     },
     handle(data, req, res) {
-      return data.getList('data.list');
+      const list = data.getList('data.list');
+      return { list };
     }
   }
   ```
@@ -78,4 +79,4 @@ moudle.exports = {
   
   `body()` 设置接口的post请求参数。
   
-  `handle()` 处理接口返回的数据, 需将处理的数据返回
+  `handle()` 处理接口返回的数据。需将处理后的数据返回
