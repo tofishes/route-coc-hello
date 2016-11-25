@@ -77,3 +77,5 @@ moudle.exports = {
   `query()` 设置接口的get请求参数。
   
   `body()` 设置接口的post请求参数。
+  
+  `handle()` 处理接口返回的数据。
