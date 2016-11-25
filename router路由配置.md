@@ -92,7 +92,7 @@ moudle.exports = {
   
   一级routerMeta配置的query, body, name, cache会被作为二级routerMeta相同配置的默认值。意味着 未配置routerMeta.api.routerMeta.query, 则routerMeta.api.routerMeta.query = routerMeta.api.query。
   
-  一级routerMeta配置的handle方法，会整合处理多个接口合并后的数据，即res.apiData.
+  一级routerMeta配置的handle方法，会整合处理多个接口合并后的数据，即res.apiData
   
   示例：
   ```
