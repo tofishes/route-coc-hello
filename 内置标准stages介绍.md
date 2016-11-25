@@ -18,7 +18,7 @@ app.set('handleAPI', handleAPI);
 
 #### 属性
 * req.stageIndex 流程索引
-* req.pathname 取代req.path
+* req.pathname 默认等于req.path, 使用req.forward功能后则不相等，req.path始终为原始请求地址
 * req.param  路由参数
 * req.router 匹配到的router配置
 * req.interceptors 匹配到的拦截器
