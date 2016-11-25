@@ -21,6 +21,7 @@ app.set('handleAPI', handleAPI);
 * req.pathname 取代req.path
 * req.router 匹配到的router配置
 * req.interceptors 匹配到的拦截器
+* req.apisTask 接口任务
 
 * res.apiData 接口数据
 * res.apiInfo 接口信息
