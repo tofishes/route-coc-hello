@@ -130,7 +130,8 @@ moudle.exports = {
   ### Function配置类型
   一个router配置的层级为：router.get.routerMeta。
   其中router.get也可以配置为一个Function，返回一个标准的reouterMeta。
-  routerMeta.api, routerMeta.cache, routerMeta.
+  routerMeta.api, routerMeta.cache, routerMeta.query, routerMeta.body, routerMeta.view
+  均可以是一个Function。入参统一为 (req, res), this指向当前router。
   
   凡是Function类型的配置项
   
