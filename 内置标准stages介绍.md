@@ -25,4 +25,5 @@ app.set('handleAPI', handleAPI);
 * res.hasSent 代理转发后，值为true
 
 #### 方法
-* res.forward(routePath) 服务器内跳转，例如 res.forward('/news/id/100')
+* res.forward(routePath) 
+  服务器内跳转，例如 res.forward('/news/100')，内部跳转到 '/news/:id' 的route配置
