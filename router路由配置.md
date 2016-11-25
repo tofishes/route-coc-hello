@@ -36,7 +36,7 @@ moudle.exports = {
   
 2. `'get':`
 
-  该route请求方法，可以是get或post。
+  route请求方法，可以是get或post。
   
 3. 路由单元：
   
@@ -65,3 +65,5 @@ moudle.exports = {
   为方便解说，以上配置单元命名为 routerMeta。
   
   `api` 接口地址，可以用 post:|get:|delete:|put: 开头指定该接口请求方法。默认使用 route请求方法。
+  
+  `name` 接口数据名，用于 res.apiData[name]来获取
