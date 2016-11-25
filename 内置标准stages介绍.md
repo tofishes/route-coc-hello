@@ -19,6 +19,7 @@ app.set('handleAPI', handleAPI);
 #### 属性
 * req.stageIndex 流程索引
 * req.pathname 取代req.path
+* req.param  路由参数
 * req.router 匹配到的router配置
 * req.interceptors 匹配到的拦截器
 * req.apisTask 接口任务
