@@ -21,3 +21,5 @@ app.set('handleAPI', handleAPI);
 * req.pathname 取代req.path
 * res.apiData 接口数据
 * res.apiInfo 接口信息
+* res.forwardSent forward跳转后，值为true
+* res.hasSent 代理转发后，值为true
