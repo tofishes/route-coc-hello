@@ -34,4 +34,6 @@ moudle.exports = {
   
   路由路径，即 route。可以是逗号间隔的多个route。路由规则和express相同。
   
-2、`'get':`
+2. `'get':`
+
+  即，该route请求方法，可以是get或post。
