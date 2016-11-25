@@ -2,7 +2,7 @@
 
 ### 配置清单
 ```
-'/route/:param': {
+'/route/:param, /route, /route/two/:param': {
   'get': {
     'api': 'post:http://localhost:8080/api/comment/list'
     'name': 'comments',
