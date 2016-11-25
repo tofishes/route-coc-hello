@@ -137,5 +137,4 @@ moudle.exports = {
   
   routerMeta.handle入参有所不同，为（data, req, res）。
   
-  凡是Function类型的配置项
   
