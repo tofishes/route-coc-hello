@@ -10,6 +10,10 @@ app.set('routerMap', routerMap);
 app.set('routers', routers);
 app.set('views', viewDir);
 app.set('viewExclude', viewExclude);
+// 设置接口数据缓存方法
+app.set('apiDataCache', apiDataCache);
+// 设置接口地址处理方法
+app.set('handleAPI', handleAPI);
 ```
 
 #### 属性：
