@@ -27,3 +27,5 @@ moudle.exports = {
   }
 }
 ```
+
+以上为一个标准的配置单元，称为 router-meta
