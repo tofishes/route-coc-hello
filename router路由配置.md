@@ -32,4 +32,4 @@ moudle.exports = {
 
 1. `'/route/:param, /route, /route/two/:param'`
   
-  路由路径，即 route。
+  路由路径，即 route。可以是逗号间隔的多个route.
