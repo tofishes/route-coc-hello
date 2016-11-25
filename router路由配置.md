@@ -6,7 +6,6 @@
   'get': {
     'api': 'post:http://localhost:8080/api/comment/list'
     'name': 'comments',
-    'cache': true,
     'cache': false,
     'timeout': 1000,
     query(req, res) {
