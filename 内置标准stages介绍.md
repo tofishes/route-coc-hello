@@ -26,4 +26,5 @@ app.set('handleAPI', handleAPI);
 
 #### 方法
 * res.forward(routePath) 
-  服务器内跳转，例如 res.forward('/news/100')，内部跳转到 '/news/:id' 的route
+  服务器内跳转，例如 res.forward('/news/100')，内部会跳转到 '/news/:id' 的route
+*
