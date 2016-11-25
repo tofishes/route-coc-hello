@@ -25,4 +25,4 @@ app.set('handleAPI', handleAPI);
 * res.hasSent 代理转发后，值为true
 
 #### 方法
-* res.forward(path) 服务器内跳转
+* res.forward(routePath) 服务器内跳转
