@@ -13,7 +13,7 @@
    * [runTask](runtask.md)
    * [getViewPath](getviewpath.md)
    * [render](render.md)
-* [扩展属性](内置标准stages介绍.md)
+* [扩展属性与方法](内置标准stages介绍.md)
 * [Router路由配置](router路由配置.md)
 * [Interceptor拦截器配置](interceptor拦截器配置.md)
 * [场景实践](场景实践.md)
