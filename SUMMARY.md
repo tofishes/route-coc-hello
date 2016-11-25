@@ -19,4 +19,5 @@
 * [场景实践](场景实践.md)
 * [v1对比v2](v1dui_bi_v2.md)
 * [history](history.md)
+* 完整的例子
 
