@@ -84,13 +84,15 @@ moudle.exports = {
   
   ### API高级配置
   
-  **routerMeta**.api 除了可以是字符串，也可以是数组，或对象。 还可以是Function，返回上述数据类型。
+  **routerMeta**.api 除了可以是字符串，也可以是数组，或对象。 还可以是Function，返回上述3种数据类型。
   
   但不论是数组还是对象，基本组成结构必须是一个标准的**routerMeta**。
   
   基于routerMeta结构，可以灵活组织api的配置，但api最多支持两级配置，即可以是 routerMeta.api.routerMeta, 但不可以是 routerMeta.api.routerMeta.api.routerMeta。
   
   一级routerMeta配置的query, body, name, cache会被作为二级routerMeta相同配置的默认值。意味着 未配置routerMeta.api.routerMeta.query, 则routerMeta.api.routerMeta.query = routerMeta.api.query。
+  
+  一级routerMeta配置的handle方法，会整合处理多个接口合并后的数据，即res.apiData.
   
   示例：
   ```
