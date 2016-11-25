@@ -23,7 +23,8 @@ moudle.exports = {
       },
       handle(data, req, res) {
         return data.getList('data.list');
-      }
+      },
+      'view': 'route/list'
     }
   }
 }
