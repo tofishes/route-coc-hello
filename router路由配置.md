@@ -62,4 +62,4 @@ moudle.exports = {
   }
   ```
   
-  为方便解说，以上配置命名为 routerMeta
+  为方便解说，以上配置单元命名为 routerMeta。
