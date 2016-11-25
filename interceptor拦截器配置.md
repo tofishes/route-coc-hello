@@ -33,4 +33,4 @@ moudle.exports = {
   拦截器匹配路径，与router.route配置可以相同，但通常使用通配符 * 或 指定明确的路径。
   
 2. router配置需指定请求方法，但是拦截器不需要，拦截器适应于所有请求方式。
-3. 剩下的interceptor配置和**routerMeta**基本一致。不一样的是，由于interceptor的特殊性，routerMeta.handle配置对routerMeta.api.routerMeta无效，只处理routerMeta.api为String类型（或Function返回String类型）的接口数据。
+3. 剩下的interceptor配置和**routerMeta**基本一致。不一样的是，由于interceptor的特殊性，routerMeta.handle配置对routerMeta.api.routerMeta无效，只处理routerMeta.api为String类型（或Function返回String类型）的接口数据，可以在使用中体会。
