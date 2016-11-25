@@ -69,3 +69,5 @@ moudle.exports = {
   `name` 接口数据名，用于 res.apiData[name]来获取。
   
   `cache` 是否缓存接口数据。可以是Function，返回boolean型。
+  
+  `timeout` 单独指定该接口的超时时间。
