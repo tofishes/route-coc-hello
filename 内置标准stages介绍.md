@@ -17,5 +17,6 @@ app.set('handleAPI', handleAPI);
 ```
 
 #### 属性：
+* req.stageIndex 流程索引
 * req.pathname 同req.path
 * res.apiData 接口数据
