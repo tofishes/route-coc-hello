@@ -90,7 +90,7 @@ moudle.exports = {
   
   基于routerMeta结构，可以灵活组织api的配置，但api最多支持两级配置，即可以是 routerMeta.api.routerMeta, 但不可以是 routerMeta.api.routerMeta.api.routerMeta。
   
-  一级routerMeta配置的query, body, name, cache会被作为二级routerMeta相同配置的默认值。
+  一级routerMeta配置的query, body, name, cache会被作为二级routerMeta相同配置的默认值。意味着 未配置routerMeta.api.routerMeta.query, 则routerMeta.api.routerMeta.query = routerMeta.api.query。
   
   示例：
   ```
