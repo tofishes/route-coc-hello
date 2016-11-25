@@ -61,3 +61,5 @@ moudle.exports = {
     }
   }
   ```
+  
+  为方便解说，以上配置命名为 routerMeta
