@@ -88,7 +88,7 @@ moudle.exports = {
   
   `handle(data, req, res)` 处理接口返回的数据。需将处理后的数据返回。若配置了routerMeta.name，则返回的数据赋值给 res.apiData[routerMeta.name]，否则将直接赋值给 res.apiData，须注意。在数据不受到破坏的情况下，handle(data)中的data，可以拥有三种取值方法：data.getMap(), data.getList(), data.getValue()。取值方法的使用详见《Data valueChain》章节 
   
-  `view` 设置视图的模板路径。coc默认使用swig模板引擎。若是使用express app.engine()设置了其他引擎，则view路径需要带上模板的文件后缀，如 'route/page.pug'。在调用 coc(app) 之前若使用 express app.set('view engine', 'pug')，则会改变默认渲染引擎。
+  `view` 设置视图的模板路径。coc默认使用swig模板引擎。若是使用express app.engine()设置了其他引擎，则view路径需要带上模板的文件后缀，如 'route/page.pug'。在调用 coc(app) 之前若使用 express app.set('view engine', 'pug')，则会改变默认渲染引擎。可以配置为返回字符串路径的Function类型。
   
   ### API高级配置
   
@@ -130,6 +130,7 @@ moudle.exports = {
   ### Function配置类型
   一个router配置的层级为：router.get.routerMeta。
   其中router.get也可以配置为一个Function，返回一个标准的reouterMeta。
+  routerMeta.api, routerMeta.cache, routerMeta.
   
   凡是Function类型的配置项
   
