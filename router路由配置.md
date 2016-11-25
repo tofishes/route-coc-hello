@@ -83,6 +83,8 @@ moudle.exports = {
   
   
   ### API高级配置
+  
+  **routerMeta**.api 除了可以是字符串，也可以是数组，或对象。 也可以是Function，返回上述数据结果。
   示例：
   ```
   '/mixed/api-config': {
