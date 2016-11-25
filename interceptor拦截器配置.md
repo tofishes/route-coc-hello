@@ -4,7 +4,7 @@
 ```
 // 一个router配置文件
 moudle.exports = {
-  '/route/*, /member/*': {
+  '/route/*, /member/profile': {
     'api': 'post:http://localhost:8080/api/comment/list'
     'name': 'comments',
     'cache': false,
