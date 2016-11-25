@@ -20,15 +20,15 @@ app.set('handleAPI', handleAPI);
 * req.stageIndex 流程索引
 * req.pathname 取代req.path
 * req.router 匹配到的router配置
-* req.
+* req.interceptors 匹配到的拦截器
 
 * res.apiData 接口数据
 * res.apiInfo 接口信息
 * res.forwardSent forward跳转后，值为true
 * res.hasSent 代理转发后，值为true
-* res.viewPath 视图相对路径
-* res.viewExt 视图后缀
-* res.viewFile 视图物理文件地址;
+* res.viewPath 视图模板相对路径
+* res.viewExt 视图模板后缀
+* res.viewFile 视图模板物理文件地址;
 
 #### 方法
 * res.forward(routePath) 
