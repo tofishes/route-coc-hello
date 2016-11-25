@@ -66,4 +66,6 @@ moudle.exports = {
   
   `api` 接口地址，可以用 post:|get:|delete:|put: 开头指定该接口请求方法。默认使用 route请求方法。
   
-  `name` 接口数据名，用于 res.apiData[name]来获取
+  `name` 接口数据名，用于 res.apiData[name]来获取。
+  
+  `cache` 是否缓存接口数据。可以是Function，返回boolean型。
