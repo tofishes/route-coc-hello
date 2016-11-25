@@ -2,6 +2,7 @@
 
 ### 配置单元
 ```
+// 一个router配置文件
 moudle.exports = {
   '/route/:param, /route, /route/two/:param': {
     'get': {
