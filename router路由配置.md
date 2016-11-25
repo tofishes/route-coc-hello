@@ -11,6 +11,7 @@ moudle.exports = {
       'cache': false,
       'timeout': 1000,
       'series': false,
+      'proxy': false,
       query(req, res) {
         return {
           'pageSize': 20,
