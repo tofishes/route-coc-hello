@@ -1,3 +1,4 @@
+
 ## Router路由配置
 
 ### 配置清单
@@ -30,7 +31,7 @@ moudle.exports = {
 }
 ```
 
-以上为一个标准的配置清单。下面逐一介绍：
+以上为一个标准的配置清单，基本层级是router.get.routerMeta。下面逐一介绍：
 
 1. `'/route/:param, /route, /route/two/:param'`
   
@@ -129,3 +130,6 @@ moudle.exports = {
   ### Function配置类型
   一个router配置的层级为：router.get.routerMeta。
   其中router.get也可以配置为一个Function，返回一个标准的reouterMeta。
+  
+  凡是Function类型的配置项
+  
