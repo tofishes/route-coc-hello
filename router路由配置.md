@@ -84,9 +84,11 @@ moudle.exports = {
   
   ### API高级配置
   
-  **routerMeta**.api 除了可以是字符串，也可以是数组，或对象。 也可以是Function，返回上述数据类型。
+  **routerMeta**.api 除了可以是字符串，也可以是数组，或对象。 还可以是Function，返回上述数据类型。
   
   但不论是数组还是对象，基本组成结构必须是一个标准的**routerMeta**。
+  
+  
   
   示例：
   ```
