@@ -14,7 +14,7 @@
       };
     },
     body(req, res) {
-    
+      return {};
     },
     'cache': false,
     'timeout': 1000
