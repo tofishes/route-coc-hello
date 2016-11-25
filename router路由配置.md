@@ -33,7 +33,7 @@ moudle.exports = {
 1. `'/route/:param, /route, /route/two/:param'`
   
   路由路径，即 route。可以是逗号间隔的多个route。路由规则和express相同。
-  详见 http://expressjs.com/en/4x/api.html#path-examples
+  详见 [http://expressjs.com/en/4x/api.html#path-examples](http://expressjs.com/en/4x/api.html#path-examples)
   
 2. `'get':`
 
