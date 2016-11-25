@@ -8,6 +8,7 @@
     'name': 'comments',
     'cache': false,
     'timeout': 1000,
+    'series': false,
     query(req, res) {
       return {
         'pageSize': 20,
