@@ -80,3 +80,30 @@ moudle.exports = {
   `body()` 设置接口的post请求参数。
   
   `handle()` 处理接口返回的数据。需将处理后的数据返回
+  
+  
+  ### API高级配置
+  示例：
+  ```
+  '/mixed/api-config': {
+    'get': {
+      api() {
+        return ['http://localhost:8080/test/intercept/series/comments',
+          {
+            api: 'http://localhost:8080/comment/list',
+            name: 'commentPage'
+          },
+          () => ({
+            api: 'http://localhost:8080/api/comment/list',
+            name: 'commentJson'
+          })
+        ];
+      },
+      name: 'real',
+      handle(data, req, res) {
+        const result = data.real && data.commentJson && data.commentPage;
+        res.send(!!result);
+      }
+    }
+  }
+  ```
