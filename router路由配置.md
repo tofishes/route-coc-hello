@@ -48,10 +48,10 @@ moudle.exports = {
     'timeout': 1000,
     'series': false,
     query(req, res) {
-      return {
+      return Object.assign({
         'pageSize': 20,
         'type': 1
-      };
+      }, req.query);
     },
     body(req, res) {
       return req.body;
