@@ -26,3 +26,6 @@ moudle.exports = {
 }
 ```
 
+以上为一个标准的配置清单。
+
+1. `'/route/*, /member/profile'`
