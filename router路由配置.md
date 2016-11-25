@@ -28,4 +28,7 @@ moudle.exports = {
 }
 ```
 
-以上为一个标准的配置文件
+以上为一个标准的配置清单。下面逐一介绍：
+
+1. `'/route/:param, /route, /route/two/:param'`
+  
