@@ -71,3 +71,5 @@ moudle.exports = {
   `cache` 是否缓存接口数据。可以是Function，返回boolean型。
   
   `timeout` 单独指定该接口的超时时间。
+ 
+  `series` 该接口是并发还是串行。用于多个接口的请求方式。
