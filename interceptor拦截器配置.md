@@ -30,4 +30,4 @@ moudle.exports = {
 
 1. `'/route/*, /member/profile'`
 
-  拦截器匹配规则
+  拦截器匹配路径，与router.route配置不同的是，这里更多使用通配符 * 或 指定固定的路径
