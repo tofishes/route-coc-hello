@@ -18,5 +18,4 @@
 * [Interceptor拦截器配置](interceptor拦截器配置.md)
 * [场景实践](场景实践.md)
 * [完整的例子](wan_zheng_de_li_zi.md)
-* [v1对比v2](v1dui_bi_v2.md)
 
