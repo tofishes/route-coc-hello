@@ -1,5 +1,11 @@
 ## Interceptor拦截器配置
 
+interceptor适用场景：
+
+1. 在router执行前拦截请求（需设置series=true），比如权限管理（非登录不能查看某些页面）。
+2. 公共api数据请求，比如每个页面都需要请求登录数据。
+
+
 ### 配置清单
 ```
 // 一个interceptor配置文件
