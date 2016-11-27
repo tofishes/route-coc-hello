@@ -28,7 +28,8 @@ if (!app.get('view engine')) {
 * req.interceptors 匹配到的拦截器
 * req.apisTask 接口任务
 * req.httpRequest 接口请求client
-* 
+
+* res.stage coc产生的stage引用
 * res.apiData 接口数据
 * res.apiInfo 接口信息
 * res.forwardSent forward跳转后，值为true
