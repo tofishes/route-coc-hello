@@ -17,6 +17,11 @@ if (!app.get('view engine')) {
 }
 ```
 
+#### swig模板默认设置
+swig.setDefaults({
+  loader: swig.loaders.fs(viewDir)
+});
+
 **以下扩展的属性和方法，是coc框架运行所需，请勿覆盖。**
 
 #### 属性
