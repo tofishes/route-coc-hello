@@ -4,16 +4,14 @@
 
 #### app设置
 ```
-app.set('interceptorMap', interceptorMap);
-app.set('interceptors', interceptors);
-app.set('routerMap', routerMap);
-app.set('routers', routers);
-app.set('views', viewDir);
-app.set('viewExclude', viewExclude);
-// 设置接口数据缓存方法
-app.set('apiDataCache', apiDataCache);
-// 设置接口地址处理方法
-app.set('handleAPI', handleAPI);
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+// parse application/json
+app.use(bodyParser.json());
+app.use(cookieParser());
+// nginx代理转发后，要获取正确host需要：
+app.set('trust proxy', 'loopback');
+app.set('query parser', 'extended');
 ```
 
 #### 属性
