@@ -15,6 +15,6 @@
    * [render](render.md)
 * [默认设置与扩展](内置标准stages介绍.md)
 * [Router路由配置](router路由配置.md)
-* [Interceptor拦截器配置](Interceptor拦截器配置.md)
+* [Interceptor拦截器配置](Interceptor.md)
 * [场景实践](场景实践.md)
 
