@@ -1,7 +1,7 @@
 ## 默认设置及扩展的属性方法
 
 
-#### app默认设置
+#### app默认已设置
 ```
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
