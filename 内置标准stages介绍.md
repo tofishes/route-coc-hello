@@ -22,6 +22,8 @@ swig.setDefaults({
   loader: swig.loaders.fs(viewDir)
 });
 
+swig引用的获取使用 stage.get('swig');
+
 **以下扩展的属性和方法，是coc框架运行所需，请勿覆盖。**
 
 #### 属性
