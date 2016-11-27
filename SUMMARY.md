@@ -2,7 +2,7 @@
 
 * [简介](README.md)
 * [开始使用](quick-start.md)
-* [coc](route-coc参数.md)
+* [coc](route-coc.md)
 * [Stage](stage.md)
    * [pageInfo](pageinfo.md)
    * [matchRouter](matchrouter.md)
