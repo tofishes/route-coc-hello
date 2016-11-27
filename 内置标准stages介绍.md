@@ -20,6 +20,7 @@ if (!app.get('view engine')) {
 **以下扩展的属性和方法，是coc框架运行所需，请勿覆盖。**
 
 #### 属性
+* req.stage coc产生的stage引用
 * req.stageIndex 流程索引
 * req.pathname 默认等于req.path, 使用req.forward功能后则不相等，req.path始终为原始请求地址
 * req.param  路由参数
