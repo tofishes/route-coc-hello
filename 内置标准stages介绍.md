@@ -13,7 +13,7 @@ app.set('trust proxy', 'loopback');
 app.set('query parser', 'extended');
 ```
 
-以下属性和方法，是coc框架运行所需，请勿覆盖。
+**以下属性和方法，是coc框架运行所需，请勿覆盖。**
 
 #### 属性
 * req.stageIndex 流程索引
