@@ -1,7 +1,7 @@
 # Summary
 
 * [简介](README.md)
-* [开始使用](chapter1.md)
+* [开始使用](quick-start.md)
 * [coc](route-coc参数.md)
 * [Stage](stage.md)
    * [pageInfo](pageinfo.md)
