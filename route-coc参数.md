@@ -59,7 +59,7 @@ set apiDataCache(key, value);
 
 `apiDataName`接口数据名生成方法，当未配置routerMeta.name时，将使用该生成方法得到一个数据存储名，即res.apiData[name]中的name。因此，合理设置apiDataName可以简化routerMeta.name配置。apiDataName默认是以下方法实现：
 ```
-// 入参为routerMeta.api地址字符串，this指向当前routerMeta
+// 入参为routerMeta.api地址字符串，this指向当前routerMeta对象
 function apiDataName(api) {
   return api.substr(api.lastIndexOf('/') + 1);
 }
