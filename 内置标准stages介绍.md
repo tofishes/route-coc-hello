@@ -22,7 +22,7 @@ swig.setDefaults({
   loader: swig.loaders.fs(viewDir)
 });
 
-swig引用的获取使用 const swig = stage.get('swig');
+swig对象的获取使用 const swig = stage.get('swig');
 
 **以下扩展的属性和方法，是coc框架运行所需，请勿覆盖。**
 
