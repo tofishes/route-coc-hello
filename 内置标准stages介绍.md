@@ -11,6 +11,10 @@ app.use(cookieParser());
 // nginx代理转发后，要获取正确host需要：
 app.set('trust proxy', 'loopback');
 app.set('query parser', 'extended');
+// 设置引擎默认后缀
+if (!app.get('view engine')) {
+  app.set('view engine', 'swig');
+}
 ```
 
 **以下扩展的属性和方法，是coc框架运行所需，请勿覆盖。**
