@@ -1,6 +1,5 @@
 ## 扩展属性与方法
 
-以下属性和方法，是coc框架运行所需，请勿覆盖。
 
 #### app设置
 ```
@@ -13,6 +12,9 @@ app.use(cookieParser());
 app.set('trust proxy', 'loopback');
 app.set('query parser', 'extended');
 ```
+
+
+以下属性和方法，是coc框架运行所需，请勿覆盖。
 
 #### 属性
 * req.stageIndex 流程索引
