@@ -26,6 +26,7 @@ options =  {
   stages = defaultStages,                 // 默认stage列表 
   mount = '/',                            // 程序挂载路径，默认为根路径，类型符合express path examples
   apiDataCache = memoryCache,             // 接口数据缓存方法，默认存储于内存中
+  apiDataName,                            // 接口数据名方法，默认为获取api地址最后一个/后面的单词名
   handleAPI = url => url                  // router.api地址预处理方法，默认返回自身
 }
 
