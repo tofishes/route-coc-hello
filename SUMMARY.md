@@ -16,5 +16,5 @@
 * [默认设置与扩展](default-config-and-extends.md)
 * [Router路由配置](router-config.md)
 * [Interceptor拦截器配置](interceptor.md)
-* [场景实践](场景实践.md)
+* [场景实践](practices.md)
 
