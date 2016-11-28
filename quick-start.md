@@ -55,31 +55,13 @@ route-coc是基于express.js构建的，并且添加了express.js依赖，所以
   ```
 
   hello.swig写入以下内容：
-
-  ```
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>hello page - route-coc</title>
-  </head>
-  <body>
-    <h3>Hi, this is a hello page with route-coc.</h3>
-    {% if username %}
-    <p>get name '{{ username }}' form "router handle" method.</p>
-    {% endif %}
-
-    {% if request.param.name %}
-    <p>get name '{{ request.param.name }}' form "request.param.name" with inner object request.</p>
-    {% endif %}
-  </body>
-  </html>
-  ```
+  ![hello.swig](html-code.png)
 
 6. **OK! 再次启动app: node app.js，分别访问：**
 http://localhost:8080/hello<br>
 http://localhost:8080/hello/lily
 <br>看看页面呈现吧。 
 
-####注：
+  ####注：
 * route-coc本质是express的middleware实现，因此express本身的各种API也可以使用。
+* 以上代码可以在 <https://github.com/tofishes/route-coc-hello/tree/master/code> 找到
