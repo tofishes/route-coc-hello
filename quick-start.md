@@ -57,23 +57,23 @@ route-coc是基于express.js构建的，并且添加了express.js依赖，所以
   hello.swig写入以下内容：
 
   ```
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>hello page - route-coc</title>
-  </head>
-  <body>
-    <h3>Hi, this is a hello page with route-coc.</h3>
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;hello page - route-coc&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h3&gt;Hi, this is a hello page with route-coc.&lt;/h3&gt;
     {% if username %}
-    <p>get name '{{ username }}' form `router handle` method.</p>
+    &lt;p&gt;get name '{{ username }}' form "router handle" method.&lt;/p&gt;
     {% endif %}
 
     {% if request.param.name %}
-    <p>get name '{{ request.param.name }}' form `request.param.name` with inner object request.</p>
+    &lt;p&gt;get name '{{ request.param.name }}' form "request.param.name" with inner object request.&lt;/p&gt;
     {% endif %}
-  </body>
-  </html>
+  &lt;/body&gt;
+  &lt;/html&gt;
   ```
 
 6. **OK! 再次启动app: node app.js，分别访问：**
