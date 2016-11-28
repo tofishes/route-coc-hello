@@ -55,7 +55,7 @@ route-coc是基于express.js构建的，并且添加了express.js依赖，所以
   ```
 
   hello.swig写入以下内容：
-  ![hello.swig](html-code.png)
+  ![hello.swig code](html-code.png)
 
 6. **OK! 再次启动app: node app.js，分别访问：**
 http://localhost:8080/hello<br>
