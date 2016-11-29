@@ -41,6 +41,9 @@ const defaultInterceptorDir = `${pwd}/interceptors`; // 同上
 const defaultViewDir = `${pwd}/views`; // 同上
 ```
 
+
+`interceptXhr`指拦截器配置是否对ajax请求有效，默认不拦截
+
 `viewExclude`参数的含义是排除自动渲染模板的目录，
 比如默认就是禁止直接访问 /views/include 目录下的模板文件。
 PS: 自动渲染模板，是指未配置任何router时，访问 /page/a 时会自动渲染 /views/page/a.swig 模板。
