@@ -21,6 +21,7 @@ app是express app对象，options可以传以下配置，不传则以默认值�
 options =  { 
   routerDir = defaultRouterDir,           // 路由目录 
   interceptorDir = defaultInterceptorDir, // 拦截器目录
+  interceptXhr = false,                   // 是否拦截ajax请求，默认不拦截
   viewDir = defaultViewDir,               // 视图模板目录        
   viewExclude = ['**/include/**'],        // 排除自动渲染模板的目录，采用glob匹配规则
   stages = defaultStages,                 // 默认stage列表 
