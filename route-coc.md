@@ -42,7 +42,7 @@ const defaultViewDir = `${pwd}/views`; // 同上
 ```
 
 
-`interceptXhr`指拦截器配置是否对ajax请求有效，默认不拦截
+`interceptXhr`指拦截器配置是否对ajax请求有效，默认不拦截。
 
 `viewExclude`参数的含义是排除自动渲染模板的目录，
 比如默认就是禁止直接访问 /views/include 目录下的模板文件。
