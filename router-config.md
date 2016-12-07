@@ -93,9 +93,9 @@ moudle.exports = {
   
   ### API高级配置
   
-  **routerMeta**.api 除了可以是字符串，也可以是数组。 还可以是Function，返回上述3种数据类型。
+  **routerMeta**.api 除了可以是字符串，也可以是数组。 还可以是Function，返回上述2种数据类型。
   
-  但不论是数组还是对象，基本组成结构必须是一个标准的**routerMeta**。
+  若为数组类型，其每项组成结构必须是一个标准的**routerMeta**。
   
   基于routerMeta结构，可以灵活组织api的配置，但api最多支持两级配置，即可以是 routerMeta.api.routerMeta, 但不可以是 routerMeta.api.routerMeta.api.routerMeta。
   
