@@ -21,6 +21,7 @@ app是express app对象，options可以传以下配置，不传则以默认值�
 options =  { 
   routerDir = defaultRouterDir,           // 路由目录 
   interceptorDir = defaultInterceptorDir, // 拦截器目录
+  interceptXhr = false,                   // 是否拦截ajax请求，默认不拦截
   viewDir = defaultViewDir,               // 视图模板目录        
   viewExclude = ['**/include/**'],        // 排除自动渲染模板的目录，采用glob匹配规则
   stages = defaultStages,                 // 默认stage列表 
@@ -40,6 +41,9 @@ const defaultInterceptorDir = `${pwd}/interceptors`; // 同上
 const defaultViewDir = `${pwd}/views`; // 同上
 ```
 
+
+`interceptXhr`指拦截器配置是否对ajax请求有效，默认不拦截。
+
 `viewExclude`参数的含义是排除自动渲染模板的目录，
 比如默认就是禁止直接访问 /views/include 目录下的模板文件。
 PS: 自动渲染模板，是指未配置任何router时，访问 /page/a 时会自动渲染 /views/page/a.swig 模板。
@@ -47,7 +51,7 @@ PS: 自动渲染模板，是指未配置任何router时，访问 /page/a 时会�
 `stages`配置一般不用动，高级定制才需要，确保已经深刻理解route-coc的工作机制。
 
 `mount`路径配置，指使用coc处理哪些路径下的请求，本质是 express app.use(mount, ()=>{})中的mount。<br>
- 具体请查看 http://expressjs.com/en/4x/api.html#path-examples
+ 具体路径规则请查看 http://expressjs.com/en/4x/api.html#path-examples
 
 `apiDataCache`接口数据缓存方法的接口定义，自定义的方法需按以下定义实现(伪代码)：
 ```

@@ -14,6 +14,7 @@
    * [getViewPath](getviewpath.md)
    * [render](render.md)
 * [默认设置与扩展](default-config-and-extends.md)
+* [View渲染](viewxuan_ran.md)
 * [Router路由配置](router-config.md)
 * [Interceptor拦截器配置](interceptor.md)
 * [场景实践](practices.md)

@@ -33,6 +33,7 @@ swig对象的获取使用 `const swig = stage.get('swig');`。
 * req.param  路由参数
 * req.router 匹配到的router配置
 * req.interceptors 匹配到的拦截器
+* req.apis 解析后的接口配置
 * req.apisTask 接口任务
 * req.httpRequest 接口请求client
 

@@ -16,7 +16,7 @@ route-coc已经规定好 拦截器-路由-页面渲染 这样的一个流程，�
 * 过滤器
 * 拦截器
 * res.forward服务器内跳转
-* 默认使用swig模板引擎
+* 默认使用[nunjucks](https://mozilla.github.io/nunjucks/)模板引擎
 
 **约定的概念及属性：**
 
