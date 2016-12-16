@@ -8,6 +8,24 @@ nunjucks具有和swig相似的语法，能够比较好的过渡。
 
 route-coc对多引擎的支持做法是：借用express的API。
 
-示例：
-const app = express();
-app.engine('swig', swig.renderFile);
+用swig示例：
+  ```
+  const express = require('express');
+  const coc = require('route-coc');
+  const swig = require('swig');
+
+  const app = express();
+  // 注册swig后缀使用swig的渲染方法
+  app.engine('swig', swig.renderFile);
+  
+  const stage = coc(app);
+  const port = 8080;
+  app.listen(port, () => {
+    const startInfo = `server run at http:\/\/localhost:${port}`;
+  });
+  ```
+  
+然后router配置的view需指定后缀名：
+```
+module.
+```
