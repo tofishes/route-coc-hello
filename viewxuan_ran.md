@@ -4,6 +4,8 @@
 
 nunjucks具有和swig相似的语法，能够比较好的过渡。
 
+官方nunjucks包有一点不兼容route-coc，因此route-coc实际使用的包为 nunjucks-route-coc，此包用于适配route-coc，并且完全和官方包功能一致。
+
 ### 多引擎支持
 
 route-coc对多引擎的支持做法是：借用express的API。
