@@ -35,7 +35,7 @@ route-coc是基于express.js构建的，并且添加了express.js依赖，所以
    
 5. **添加view和router配置。**
 
-   在routers目录下建立hello.js, views目录下建立hello.swig。
+   在routers目录下建立hello.js, views目录下建立hello.njk。
 
   hello.js写入以下路由配置：
 
@@ -54,8 +54,8 @@ route-coc是基于express.js构建的，并且添加了express.js依赖，所以
   };
   ```
 
-  hello.swig写入以下内容：
-  ![hello.swig code](html-code.png)
+  hello.njk写入以下内容：
+  ![hello.njk code](html-code.png)
 
 6. **OK! 再次启动app: node app.js，分别访问：**
 http://localhost:8080/hello<br>
