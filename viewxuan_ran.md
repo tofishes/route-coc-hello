@@ -50,7 +50,7 @@ route-coc对多引擎的支持做法是：借用express的API。
   const app = express();
   // 注册swig后缀使用swig的渲染方法
   app.engine('swig', swig.renderFile);
-  // 设置默认引擎后缀，必须在coc(app)前设置
+  // 设置默认引擎后缀，**必须在coc(app)前设置**
   app.set('view engine', 'swig');
   
   const stage = coc(app);
