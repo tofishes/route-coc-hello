@@ -27,5 +27,20 @@ route-coc对多引擎的支持做法是：借用express的API。
   
 然后router配置的view需指定后缀名：
 ```
-module.
+  module.exports = {
+    '/hello, /hello/:name': {
+      'get': {
+        handle(data, req) {
+          return {
+            'username': req.param.name
+          };
+        },
+        view: 'hello.swig' // 这里不能省略后缀名
+      }
+    }
+  };
 ```
+
+### 用其他引擎取代nunjucks作为默认引擎
+
+若不想router配置的view指定后缀名，则需取代nunjucks作为默认引擎，还是用swig示例：
