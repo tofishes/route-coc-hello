@@ -17,4 +17,5 @@
 * [Router路由配置](router-config.md)
 * [Interceptor拦截器配置](interceptor.md)
 * [场景实践](practices.md)
+* View渲染
 
