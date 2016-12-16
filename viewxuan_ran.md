@@ -7,3 +7,7 @@ nunjucks具有和swig相似的语法，能够比较好的过渡。
 ### 多引擎支持
 
 route-coc对多引擎的支持做法是：借用express的API。
+
+示例：
+const app = express();
+app.engine('swig', swig.renderFile);
