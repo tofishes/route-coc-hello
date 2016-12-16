@@ -64,4 +64,4 @@ route-coc支持目录访问，渲染index页面。
 
 例如有一个模板文件为： `/views/dir/index.njk`， 则 访问`/view/dir`会渲染index.njk到浏览器。
 
-index页面文件的后缀名，取决于默认引擎后缀。
+index页面文件的后缀名，取决于所设置的默认引擎后缀， 默认是njk。
