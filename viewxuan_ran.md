@@ -46,7 +46,7 @@ route-coc对多引擎的支持做法是：借用express的API。
 这里要提一个模板引擎：[Marko](http://markojs.com/)。其语法既支持普通的html又支持类pug(jade)的简洁语法，很厉害。最强大的是支持UI Components，我觉得是个亮点。这么看起来非常不错的引擎，使用方法却有点奇葩，不走express规范的那种render api。
 我觉得有必要在这里介绍下如何简单把marko按express render规则融入route-coc。
 
-做法不难，如下所示(依赖Marko v4+)：
+做法不难，如下所示(基于Marko v4+)：
 
 ```
 require('marko/node-require').install();
