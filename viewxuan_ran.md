@@ -44,3 +44,16 @@ route-coc对多引擎的支持做法是：借用express的API。
 ### 用其他引擎取代nunjucks作为默认引擎
 
 若不想router配置的view指定后缀名，则需取代nunjucks作为默认引擎，还是用swig示例：
+```
+  ...
+  
+  const app = express();
+  // 注册swig后缀使用swig的渲染方法
+  app.engine('swig', swig.renderFile);
+  // 设置默认引擎后缀，必须在coc(app)前设置
+  app.set('view engine', 'swig');
+  
+  const stage = coc(app);
+  
+  ...
+```
