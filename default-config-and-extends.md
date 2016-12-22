@@ -13,7 +13,7 @@ app.set('trust proxy', 'loopback');
 app.set('query parser', 'extended');
 // 设置引擎默认后缀
 if (!app.get('view engine')) {
-  app.set('view engine', 'swig');
+  app.set('view engine', 'njk');
 }
 ```
 
