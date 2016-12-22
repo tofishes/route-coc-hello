@@ -81,3 +81,14 @@ route-coc支持目录访问，渲染index页面。
 例如有一个模板文件为： `/views/dir/index.njk`， 则 访问`/view/dir`会渲染index.njk到浏览器。
 
 index页面文件的后缀名，取决于所设置的默认引擎后缀， 默认是njk。
+
+### 模板内置对象
+在模板中可以直接使用以下对象属性：
+
+```
+{{ request }} // express req对象引用
+{{ request.ua }} // userAgent解析后的对象
+{{ request.moduleName }} // 根据请求路径得到的模块名
+```
+
+ua对象使用
