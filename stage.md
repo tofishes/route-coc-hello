@@ -31,7 +31,7 @@ nextStage()是需要被执行的，否则无法流向下一个流程。除非在
 方法中的req, res是express req, res引用。
 方法中的nextStage不是express next引用，而是express next的一个封装。通过nextStage.origin来获取express next引用。
 
-所有流程方法的context this指向该stage实例引用。
+所有流程方法的context this指向该stage实例引用（箭头函数例外）。
 
 例子1、记录耗时日志：
 ```
