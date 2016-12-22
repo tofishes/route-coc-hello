@@ -17,10 +17,18 @@ if (!app.get('view engine')) {
 }
 ```
 
-#### swig模板默认设置
-swig.setDefaults({
-  loader: swig.loaders.fs(viewDir)
-});
+#### Nunjucks模板默认设置
+
+```
+nunjucks.configure(viewDir, {
+  autoescape: true,
+  noCache: env.isDev,  // $NODE_ENV != 'production'
+  watch: env.isDev
+}
+```
+  stage.set('nunjucks', nunjucks);
+  stage.set('nunjucksEnv', nunjucksEnv);
+
 
 swig对象的获取使用 `const swig = stage.get('swig');`。
 
