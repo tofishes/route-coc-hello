@@ -92,4 +92,4 @@ index页面文件的后缀名，取决于所设置的默认引擎后缀， 默�
 ```
 
 ua对象是使用 [ua-parser-js]() 库得到解析结果，详情请查看官方文档。
-moduleName由请求路径的首位目录决定，例如请求 /news/:id, 则其moduleName为 news.
+moduleName由请求路径的首位目录决定，例如请求 /news/:id, 则其moduleName为 news。若访问的是 / 首页，则moduleName默认为home。
