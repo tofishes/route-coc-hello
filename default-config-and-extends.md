@@ -22,15 +22,12 @@ if (!app.get('view engine')) {
 ```
 nunjucks.configure(viewDir, {
   autoescape: true,
-  noCache: env.isDev,  // $NODE_ENV != 'production'
+  noCache: env.isDev,  // $NODE_ENV !== 'production'
   watch: env.isDev
 }
 ```
-  stage.set('nunjucks', nunjucks);
-  stage.set('nunjucksEnv', nunjucksEnv);
-
-
-swig对象的获取使用 `const swig = stage.get('swig');`。
+nunjucks对象的获取使用 `const nunjucks = stage.get('nunjucks');`。
+nunjucks env对象的获取使用 `const nunjucksEnv = stage.get('nunjucksEnv');`。
 
 **以下扩展的属性和方法，是coc框架运行所需，请勿覆盖。**
 
