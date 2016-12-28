@@ -14,6 +14,7 @@ moudle.exports = {
       'timeout': 1000,
       'series': false,
       'proxy': false,
+      'pageCache': false,
       query(req, res) {
         return {
           'pageSize': 20,
@@ -82,6 +83,8 @@ moudle.exports = {
   `series` 该接口是并发还是串行。用于多个接口的请求方式。series为true的api将优先请求，等请求完成后才会继续执行其他api接口请求。
   
   `proxy` 是否代理转发该接口。为true时，直接将接口返回的数据响应到客户端（比如浏览器）。
+  
+  `pageCache` 是否添加no-cache响应头，阻止浏览器缓存该页面。默认为true。
   
   `query(req, res)` 设置接口的get请求参数。
   
