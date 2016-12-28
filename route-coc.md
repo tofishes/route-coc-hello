@@ -71,3 +71,5 @@ function apiDataName(api) {
 ```
 
 `handleAPI`是对router.api地址的处理。
+
+`ajaxCache`是否添加no-cache响应头阻止ajax结果缓存。
