@@ -58,4 +58,4 @@ nunjucks env对象的获取使用 `const nunjucksEnv = stage.get('nunjucksEnv');
   服务器内跳转，例如 res.forward('/news/100')，内部会跳转到 '/news/:id' 的route
 * `next(error)`
   下一个流程，是对express next的一个封装。stage内使用这个next()跳转流程。
-  next.origin() 是 express next()。
+  next.origin() 是 express next()。 参数error为可选。
