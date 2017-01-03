@@ -59,3 +59,30 @@ nunjucks env对象的获取使用 `const nunjucksEnv = stage.get('nunjucksEnv');
 * `next(error)`
   下一个流程，是对express next的一个封装。stage内使用这个next()跳转流程。
   next.origin() 是 express next()。 参数error为可选。
+  
+### stage对象包含的属性
+`req.stage`是coc产生的stage对象引用，而stage对象内存储了一些属性，可用如下方法获取：
+```
+// 获取拦截器配置汇总后的map映射对象
+stage.get('interceptorMap');
+// 获取拦截器配置转换后的数组对象
+stage.get('interceptors');
+// 获取路由配置汇总后的map映射对象
+stage.get('routerMap');
+// 获取路由配置转换后的数组对象
+stage.get('routers');
+// 获取配置的视图目录
+stage.get('views');
+// 获取配置的禁止自动渲染模板的目录
+stage.get('viewExclude');
+// 获取是否允许拦截器拦截ajax请求
+stage.get('interceptXhr');
+// 获取接口数据缓存方法
+stage.get('apiDataCache');
+// 获取接口数据名方法
+stage.get('apiDataName');
+// 获取接口地址处理方法
+stage.get('handleAPI');
+// 获取是否设置缓存ajax headers
+stage.get('ajaxCache');
+```
