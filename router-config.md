@@ -143,5 +143,6 @@ moudle.exports = {
   
   ### router.series规则
   上面说到series配置项决定了多个接口的请求顺序（并行还是串行）。不管是路由配置还是拦截器配置都有series项，它们遵循以下运行规则：
-  `**多个接口请求被分配为两步执行：第一步先串行执行series:true的接口请求，第二步再并行执行series:false的接口请求**`
+  
+  **多个接口请求被分配为两步执行：第一步先串行执行series:true的接口请求，第二步再并行执行series:false的接口请求**
   
