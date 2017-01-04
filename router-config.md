@@ -80,7 +80,7 @@ moudle.exports = {
   
   `timeout` 单独指定该接口的超时时间。
  
-  `series` 该接口是并发还是串行。用于多个接口的请求方式。series为true的api将优先请求，等请求完成后才会继续执行其他api接口请求。
+  `series` 该接口是并发还是串行。用于多个接口的请求方式。series为true的api将优先请求，等请求完成后才会继续执行其他api接口请求。默认为false，并发接口请求。
   
   `proxy` 是否代理转发该接口。为true时，直接将接口返回的数据响应到客户端（比如浏览器）。
   
@@ -140,4 +140,8 @@ moudle.exports = {
   均可以是一个Function。入参统一为 (req, res), this指向当前router。
   
   routerMeta.handle入参有所不同，为（data, req, res）。
+  
+  ### router.series规则
+  上面说到series配置项决定了多个接口的请求顺序（并行还是串行）。不管是路由配置还是拦截器配置都有series项，它们遵循以下运行规则：
+  `**多个接口请求被分配为两步执行：第一步先串行执行series:true的接口请求，第二步再并行执行series:false的接口请求**`
   
