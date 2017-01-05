@@ -9,6 +9,7 @@ res.locals.request = req; // 模板中可以直接引用到req对象
 res.locals.app = req.app; // 模板中可以直接引用到app对象
 req.ua; // user-agent信息
 req.moduleName; // 根据请求路径产生的模块名, 例如/member/center/follow, 模块名为member
+req.pathes; // 用/将请求路径分割得到数组，例如/member/center/follow，pathes为[member,center,follow]
 ```
 
 ua对象结构请参考文档：<https://github.com/faisalman/ua-parser-js>
