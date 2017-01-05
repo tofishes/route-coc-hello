@@ -18,7 +18,7 @@ ua对象结构请参考文档：<https://github.com/faisalman/ua-parser-js>
 ```
 请求参数：{{ request.query }} {{ request.body }} {{ request.param }}
 浏览器： {{ request.ua.browser.name }}
-模块及路径：{{ request.moduleName }} {{ request.pathes | join('-') }}
+模块及路径：{{ request.moduleName }} {{ request.pathes | join(',') }}
 ```
 
 查看结果：
