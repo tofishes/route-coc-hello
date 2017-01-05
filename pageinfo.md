@@ -14,10 +14,11 @@ req.pathes; // 用/将请求路径分割得到数组，例如/member/center/foll
 
 ua对象结构请参考文档：<https://github.com/faisalman/ua-parser-js>
 
-以上结果用于在swig模板中调用：
+以上结果用于在nunjucks模板中调用：
 ```
 请求参数：{{ request.query }} {{ request.body }} {{ request.param }}
 浏览器： {{ request.ua.browser.name }}
+模块及路径：{{ request.moduleName }} {{ request.pathes | join('-') }}
 ```
 
 查看结果：
