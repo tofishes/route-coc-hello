@@ -74,7 +74,7 @@ moudle.exports = {
   
   `api` 接口地址，可以用 post:|get:|delete:|put: 开头指定该接口请求方法。默认使用 route请求方法。
   
-  `name` 接口数据名，用于 res.apiData[name]来获取。未设置时，将使用coc章节描述的apiDataName配置项来获取。
+  `name` 接口数据名，用于 res.apiData[name]来获取。未设置时，默认使用coc章节描述的apiDataName配置项来获取。
   
   `cache` 是否缓存接口数据。可以是Function，cache(req, res), 返回boolean型。
   
@@ -90,7 +90,7 @@ moudle.exports = {
   
   `body(req, res)` 设置接口的post请求参数。
   
-  `handle(data, req, res)` 处理接口返回的数据。**需将处理后的数据返回，否则得到undefined**。若配置了routerMeta.name，则返回的数据赋值给 res.apiData[routerMeta.name]，否则将直接赋值给 res.apiData，须注意。在数据不受到破坏的情况下，handle(data)中的data，可以拥有三种取值方法：data.getMap(), data.getList(), data.getValue()。取值方法的使用详见[node module value-chain](https://www.npmjs.com/package/value-chain) 。
+  `handle(data, req, res)` 处理接口返回的数据。**需将处理后的数据返回，否则得到undefined**。返回的数据将赋值给 res.apiData[routerMeta.name]。在数据不受到破坏的情况下，handle(data)中的data，可以拥有三种取值方法：data.getMap(), data.getList(), data.getValue()。取值方法的使用详见[node module value-chain](https://www.npmjs.com/package/value-chain) 。
   
   `view` 设置视图的模板路径。coc默认使用swig模板引擎。若是使用express app.engine()设置了其他引擎，则view路径需要带上模板的文件后缀，如 'route/page.pug'。在调用 coc(app) 之前若使用 express app.set('view engine', 'pug')，则会改变默认渲染引擎。可以配置为返回字符串路径的Function类型。
   
