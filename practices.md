@@ -94,6 +94,7 @@
   coc options可以设置缓存方法apiDataCache，默认缓存到内存中。
   
 7. ** 接入到已有项目中。**
+
   假如已有一个线上项目的express实现，想部分功能使用coc，可以利用coc options.mount指定某些功能路径使用coc。
   例如：
   ```
