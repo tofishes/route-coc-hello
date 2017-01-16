@@ -70,7 +70,7 @@ moudle.exports = {
   }
   ```
   
-  为方便解说，以上配置单元命名为 **routerMeta**。
+  为方便解说，以上配置单元命名为 **routerMeta**。routerMeta各属性作用如下：
   
   `api` 接口地址，可以用 post:|get:|delete:|put: 开头指定该接口请求方法。默认使用 route请求方法。
   
