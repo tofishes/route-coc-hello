@@ -1,5 +1,7 @@
 ## 场景实践
 
+0. ** res.forward应用 **
+
 1. **错误捕捉处理。**
   ```
   const domain = require('domain');
