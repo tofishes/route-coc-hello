@@ -18,6 +18,7 @@
   ```
 
 2. **API地址预处理。**
+
   例如，有接口地址为 http://domain/comment/list, http://domain/product/list等。 在router配置里可以设置为：
   ```
   {
