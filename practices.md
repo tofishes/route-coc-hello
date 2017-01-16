@@ -57,7 +57,7 @@
   `<img src="/register/captcha" alt=""/>`
   
   想把接口数据原样返回给前端浏览器，只需要设置proxy即可。
-4. **接口数据统计**
+4. **接口数据统计。**
    ```
    const stage = coc(app);
    
@@ -69,7 +69,7 @@
    通过在after('runTask')或before('render')设置过滤器，拿取apiInfo来展示接口请求情况。
    每个接口信息包含：headers(接口响应headers), consumeTime(耗时), resBody(原始接口响应体), query, body, method, api等信息。
   
-5. **loadModule，方便的代码管理方式**
+5. **loadModule，方便的代码管理方式。**
   ```
   function loadModule(dir, callback) {
     const files = glob.sync(`${dir}/**/*.js`);
