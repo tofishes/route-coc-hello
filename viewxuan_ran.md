@@ -94,3 +94,10 @@ index页面文件的后缀名，取决于所设置的默认引擎后缀， 默�
 ua对象是使用 [ua-parser-js](https://github.com/faisalman/ua-parser-js) 库解析的结果，详情请查看官方文档<https://github.com/faisalman/ua-parser-js>。
 
 moduleName由请求路径的首位目录决定，例如请求 /news/:id, 则其moduleName为 news。若访问的是 / 首页，则moduleName默认为home。
+
+### 渲染结果
+
+执行渲染后，根据条件返回以下结果的其中一种：
+
+1. 匹配到router，并且router设置了view：正常响应模板内容，Content-Type为text/html。
+2. 未得到view，但是检测到是ajax请求（req.xhr）: 将res.apiData作为json返回。
