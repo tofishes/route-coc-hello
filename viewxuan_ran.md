@@ -105,4 +105,4 @@ moduleName由请求路径的首位目录决定，例如请求 /news/:id, 则其m
 一个Router，既要响应浏览器请求渲染页面，又想响应ajax请求得到json，有两种做法：
 
 1. routerMeta.handle方法中用req.xhr判断，是xhr则用res.json(data)响应，否则 return data;
-2. routerMeta.view 设置为function，return req.xhr ? null : 'html/view/path'
+2. routerMeta.view 设置为function，return req.xhr ? null : 'html/view/path';
