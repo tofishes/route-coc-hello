@@ -100,4 +100,5 @@ moduleName由请求路径的首位目录决定，例如请求 /news/:id, 则其m
 执行渲染后，根据条件返回以下结果的其中一种：
 
 1. 匹配到router，并且router设置了view：正常响应模板内容，Content-Type为text/html。
-2. 未得到view，但是检测到是ajax请求（req.xhr）: 将res.apiData作为json返回。
+2. 未得到view，但是检测到是ajax请求（req.xhr）： 将res.apiData作为json返回。
+
