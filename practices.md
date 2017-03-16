@@ -123,3 +123,5 @@
     next();
   });
   ```
+  
+  这样，在Router路由配置章节所提及的**routerMeta**，就可以增加一项配置：routerMeta.defaultParam，类型为一个对象，将作为默认参数提供给接口。
