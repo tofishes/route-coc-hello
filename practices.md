@@ -106,3 +106,20 @@
     'mount': '/news'  // 新闻模块使用coc
   });
   ```
+ 
+8. ** 利用stage filter扩展router配置项增强功能 **
+  在接口调用的过程中，往往有些参数前端不传递时，可以有个默认值。而利用filter可以很方便扩展router的一个配置项，增加默认值。实现过程如下：
+  ```
+  stage.after('matchRouter', (req, res, next) => {
+    const defaultParam = (req.router || {}).defaultParam;
+
+    // 为配置项增加默认参数的配置
+    if (defaultParam) {
+      req.param = Object.assign({}, defaultParam, req.param);
+      Object.assign(req.query, req.param);
+      Object.assign(req.body, req.param);
+    }
+
+    next();
+  });
+  ```
