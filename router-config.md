@@ -74,7 +74,7 @@ moudle.exports = {
   
   `api` 接口地址，可以用 post:|get:|delete:|put: 开头指定该接口请求方法。默认使用 route请求方法。
   
-  `name` 接口数据名，用于 res.apiData[name]来获取。未设置时，默认使用coc章节描述的apiDataName配置项来获取。
+  `name` 接口数据名，用于 res.apiData[name]来获取。未设置时，默认使用coc章节描述的apiDataName配置项来获取。设置name后，`handle`配置中获取数据需要 data[name] 来获取。并且在view模板中使用该 name 来输出数据。
   
   `cache` 是否缓存接口数据。可以是Function，cache(req, res), 返回boolean型。
   
