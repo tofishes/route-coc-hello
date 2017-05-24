@@ -49,4 +49,4 @@ moudle.exports = {
    }
    ```
    
-4. 无view配置项。
+5. 无view配置项。
