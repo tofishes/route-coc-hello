@@ -52,6 +52,7 @@ nunjucks env对象的获取使用 `const nunjucksEnv = stage.get('nunjucksEnv');
 * `res.viewFile` 视图模板物理文件地址;
 * `res.locals.request` = req
 * `res.locals.app` = req.app
+* `res.locals.apiDataKeys` 在模板中输出{apiDataKeys}来查看视图中有哪些数据可以输出
 
 #### 方法
 * `res.forward(routePath) `
