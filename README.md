@@ -18,6 +18,10 @@ route-coc已经规定好 拦截器-路由-页面渲染 这样的一个流程，�
 * res.forward服务器内跳转
 * 默认使用[nunjucks](https://mozilla.github.io/nunjucks/)模板引擎
 
+### 工作流程图
+
+![工作流程](route-coc-flow.png)
+
 **约定的概念及属性：**
 
 #### 路由
@@ -39,10 +43,10 @@ route-coc已经规定好 拦截器-路由-页面渲染 这样的一个流程，�
 ```
 [
   "pageInfo",
-  "matchRouter",
   "initHttpRequest",
-  "requestProxy",
   "handleInterceptor",
+  "matchRouter",
+  "requestProxy",
   "handleRouter",
   "runTask",
   "getViewPath",
