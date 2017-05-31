@@ -34,6 +34,7 @@ before|after方法应该是调用者经常使用的方法。每个stage流程会
 nextStage()是需要被执行的，否则无法流向下一个流程。除非在nextStage()前做了响应(res.send等)。
 
 方法中的req, res是express req, res引用。
+
 方法中的nextStage不是express next引用，而是express next的一个封装。通过nextStage.origin来获取express next引用。
 
 所有流程方法的context this指向该stage实例引用（自定义流程若是箭头函数则例外）。
