@@ -155,4 +155,4 @@
   });
   ```
   
-  `arrayFormat`的值可以是 indices | brackets | repeat三种。
+  `arrayFormat`的值可以是 indices | brackets | repeat  三种。
