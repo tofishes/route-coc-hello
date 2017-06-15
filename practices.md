@@ -142,7 +142,7 @@
   ```
   详见qs文档：[https://github.com/ljharb/qs#stringifying]
   
-  request.js默认使用第一种 `indices` 方式。如果不适用于自己的项目，则可配置request参数来改变序列化方式。在本文档的章节 coc -> Stage -> initHttpRequest 中有讲如何配置request，那么设置qs序列化方式的配置如下即可：
+  request.js默认使用第一种 `indices` 方式。如果不适用于自己的项目，则可配置request参数来改变序列化方式。在本文档的章节 [coc -> Stage -> initHttpRequest](inithttprequest.md) 中有讲如何配置request，那么设置qs序列化方式的配置如下即可：
   
   ```
   cocer.before('initHttpRequest', (req, res, next) => {
