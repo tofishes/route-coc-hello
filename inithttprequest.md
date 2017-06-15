@@ -22,7 +22,10 @@ const requestDefaults = {
   'cert': fs.readFileSync(certFile), // 设置https证书
   'strictSSL': false,
   'timeout': 20 * 1000, // milliseconds
-  'json': true
+  'json': true,,
+  'qsStringifyOptions': {
+    'arrayFormat': 'brackets'
+  }
 };
 stage.before('initHttpRequest', (req, res, next) => {
   const headers = {
