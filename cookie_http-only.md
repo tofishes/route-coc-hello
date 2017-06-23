@@ -1,2 +1,4 @@
-# cookie http-only
+# cookie httpOnly
+
+
 
