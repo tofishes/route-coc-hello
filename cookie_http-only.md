@@ -1,4 +1,4 @@
-## cookie httpOnly
+### cookie httpOnly
 
 简单方法，重写res.cookie，写个过滤器，然后加入一下代码：
 
