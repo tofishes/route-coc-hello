@@ -76,7 +76,7 @@ stage.after('getViewPath', (req, res, next) => {
 const log = require('t-log');
 const stage = coc(app);
 stage.before('response', (req, res, next) => {
-  // runTask流程产生apiInfo统计信息
+  // runTask流程或requestProxy流程产生apiInfo统计信息
   const apiInfo = res.apiInfo;
 
   Object.keys(apiInfo).map(name => {
