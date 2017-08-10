@@ -54,7 +54,7 @@ nunjucks env对象的获取使用 `const nunjucksEnv = stage.get('nunjucksEnv');
 * `res.locals.app` = req.app
 * `res.locals.apiDataKeys` 在模板中输出{apiDataKeys}来查看视图中有哪些数据可以输出
 * `res.html` 模板的渲染结果
-* `res.proxyResoponse` 请求代理后产生的响应流
+* `res.proxyResoponse` 代理请求后产生的响应流
 
 #### 方法
 * `res.forward(routePath) `
