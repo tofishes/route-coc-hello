@@ -13,7 +13,7 @@
    * [runTask](runtask.md)
    * [getViewPath](getviewpath.md)
    * [render](render.md)
-   * response
+   * [response](response.md)
 * [默认设置与扩展](default-config-and-extends.md)
 * [View渲染](viewxuan_ran.md)
 * [Router路由配置](router-config.md)
