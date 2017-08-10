@@ -19,6 +19,7 @@
 * [Router路由配置](router-config.md)
 * [Interceptor拦截器配置](interceptor.md)
 * [场景实践](practices.md)
+   * [接入已有项目](jie_ru_yi_you_xiang_mu.md)
    * [cookie httpOnly](cookie_http-only.md)
    * [错误捕捉](exception-catch.md)
    * [API地址预处理](apidi_zhi_yu_chu_li.md)
@@ -26,6 +27,5 @@
    * [接口数据统计](jie_kou_shu_ju_tong_ji.md)
    * [loadModule代码管理方式](loadmoduledai_ma_guan_li_fang_shi.md)
    * [接口数据缓存](jie_kou_shu_ju_huan_cun.md)
-   * [接入已有项目](jie_ru_yi_you_xiang_mu.md)
 * [重要变更](important-changes.md)
 
