@@ -40,6 +40,8 @@ moudle.exports = {
   路由路径，即 route。可以是逗号间隔的多个route。路由规则和express相同。<br>
   详见 [http://expressjs.com/en/4x/api.html#path-examples](http://expressjs.com/en/4x/api.html#path-examples)
   
+  v1.2.9版本后，同时配置/route/:param 和 /route/fixed 不会发生冲突，无参路由会优先匹配。
+  
 2. `'get':`
 
   route请求方法，可以是get或post。
