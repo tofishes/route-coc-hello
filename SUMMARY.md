@@ -22,6 +22,6 @@
    * [cookie httpOnly](cookie_http-only.md)
    * [错误捕捉](exception-catch.md)
    * [API地址预处理](apidi_zhi_yu_chu_li.md)
-   * 验证码图片转发或外部接口代理
+   * [验证码图片转发或外部接口代理](yan_zheng_ma_tu_pian_zhuan_fa_huo_wai_bu_jie_kou_d.md)
 * [重要变更](important-changes.md)
 
