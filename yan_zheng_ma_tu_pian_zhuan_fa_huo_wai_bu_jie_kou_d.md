@@ -4,7 +4,7 @@
  ```
   '/register/captcha': {
     'get': {
-      'api': '/backend/reg/captcha',
+      'api': '/backend/register/captcha',
       'proxy': true
     }
   }
