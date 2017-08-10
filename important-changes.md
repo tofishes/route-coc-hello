@@ -1,4 +1,4 @@
-# 重要变更
+## 重要变更
 * 2017-08-10 v1.2.9
   1. 新增stage: response 作为最终流程。
   2. 新增res.html扩展，是由render stage产生的模板渲染结果。
