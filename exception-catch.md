@@ -7,7 +7,7 @@
     const reqDomain = domain.create();
     // next抛出的异常在这里被捕获,触发此事件
     reqDomain.on('error', handleError(e) {
-      // ... 处理错误，比如渲染到500页面
+      // ... 处理错误，比如跳转到500页面
     });
 
     return reqDomain.run(next);
