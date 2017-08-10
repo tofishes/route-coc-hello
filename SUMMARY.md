@@ -28,5 +28,6 @@
    * [loadModule代码管理方式](loadmoduledai_ma_guan_li_fang_shi.md)
    * [接口数据缓存](jie_kou_shu_ju_huan_cun.md)
    * [扩展router配置项](kuo_zhan_router_pei_zhi_xiang.md)
+   * Get参数为数组时的格式设置
 * [重要变更](important-changes.md)
 
