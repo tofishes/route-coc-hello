@@ -48,7 +48,7 @@ stage.before('pageInfo', (req, res, next) => {
   req.startTime = Date.now();
   next();
 });
-stage.before('render', (req, res, next) => {
+stage.before('response', (req, res, next) => {
   const endTime = Date.now();
   const consume = endTime - req.startTime;
   console.log('consume times: ', consume, 'ms');
