@@ -25,5 +25,6 @@
    * [验证码图片转发或外部接口代理](yan_zheng_ma_tu_pian_zhuan_fa_huo_wai_bu_jie_kou_d.md)
    * [接口数据统计](jie_kou_shu_ju_tong_ji.md)
    * [loadModule代码管理方式](loadmoduledai_ma_guan_li_fang_shi.md)
+   * 接口数据缓存
 * [重要变更](important-changes.md)
 
