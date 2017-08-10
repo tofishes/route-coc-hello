@@ -11,7 +11,8 @@ Stage是流程实现类，非常核心的一个功能类。它负责执行一些
   "requestProxy",
   "runTask",
   "getViewPath",
-  "render"
+  "render",
+  "response"
 ]
 ```
 上面是各流程的**stageName**。stage提供的过滤器方法即是针对这些stageName使用，默认流程的stageName数组可以使用stage.stageNames获取。
