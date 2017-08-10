@@ -8,4 +8,4 @@
 2. router配置设置了proxy=true属性。
 3. res.forward('http://other.com')，直接服务器内跳转到一个第三方域名地址。
 
-产生结果：请求的结果将直接响应到浏览器端。终止后面的流程。可用stage.before，不可用stage.after。
+产生结果：res.proxyResoponse响应流。并直接跳转至response流程进行响应。
