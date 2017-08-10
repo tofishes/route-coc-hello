@@ -20,5 +20,6 @@
 * [Interceptor拦截器配置](interceptor.md)
 * [场景实践](practices.md)
    * [cookie httpOnly](cookie_http-only.md)
+   * 错误捕捉
 * [重要变更](important-changes.md)
 
