@@ -14,8 +14,8 @@ const defaultUploadDir = `${process.cwd()}/uploads`;
 查看结果：
 ```
 const stage = coc(app);
-stage.after('matchRouter', (req, res, next) => {
-  console.log(req.router, req.param);
+stage.after('upload', (req, res, next) => {
+  console.log(req.body);
   next();
 });
 ```
