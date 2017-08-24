@@ -71,4 +71,4 @@ function apiDataName(api) {
 `ajaxCache`是否添加no-cache响应头阻止ajax结果缓存，默认不添加，为false时添加该headers。
 
 **注：**
-* ~~`interceptXhr`指拦截器配置是否对ajax请求有效，默认不拦截。~~  该配置项在v1.3.0版本后移除，改为在Interceptor拦截器配置中单独配置。
+* ~~`interceptXhr`指拦截器配置是否对ajax请求有效，默认不拦截。~~  该配置项在v1.3.0版本后移除，改为在[Interceptor拦截器配置](interceptor.md)中单独配置。
