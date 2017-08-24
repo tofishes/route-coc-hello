@@ -21,7 +21,6 @@ app是express app对象，options可以传以下配置，不传则以默认值�
 options =  { 
   routerDir = defaultRouterDir,           // 路由目录 
   interceptorDir = defaultInterceptorDir, // 拦截器目录
-  interceptXhr = false,                   // 是否拦截ajax请求，默认不拦截
   viewDir = defaultViewDir,               // 视图模板目录        
   viewExclude = ['**/include/**'],        // 排除自动渲染模板的目录，采用glob匹配规则
   stages = defaultStages,                 // 默认stage列表 
@@ -41,9 +40,6 @@ const defaultRouterDir = `${pwd}/routers`; // 同目录下的routers
 const defaultInterceptorDir = `${pwd}/interceptors`; // 同上
 const defaultViewDir = `${pwd}/views`; // 同上
 ```
-
-
-`interceptXhr`指拦截器配置是否对ajax请求有效，默认不拦截。
 
 `viewExclude`参数的含义是排除自动渲染模板的目录，
 比如默认就是禁止直接访问 /views/include 目录下的模板文件。
@@ -73,3 +69,6 @@ function apiDataName(api) {
 `handleAPI`是对router.api地址的处理。
 
 `ajaxCache`是否添加no-cache响应头阻止ajax结果缓存，默认不添加，为false时添加该headers。
+
+**注：**
+* ~~`interceptXhr`指拦截器配置是否对ajax请求有效，默认不拦截。~~  该配置项在v1.3.0版本后移除，改为在Interceptor拦截器配置中单独配置。
