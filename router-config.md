@@ -78,7 +78,7 @@ moudle.exports = {
   
   `name` 接口数据名，用于 res.apiData[name]来获取。未设置时，默认使用coc章节描述的apiDataName配置项来获取。设置name后，`handle`配置中获取数据需要 data[name] 来获取。并且在view模板中使用该 name 来输出数据。
   
-  `cache` 是否缓存接口数据。可以是Function，cache(req, res), 返回boolean型。
+  `cache` 缓存接口数据的有效时间，单位：ms(毫秒)。可以是Boolean和Function类型：cache(req, res), 返回boolean型或毫秒数。 当设置cache=true时，有效期为Number.MAX_VALUE毫秒。默认不缓存。
   
   `timeout` 单独指定该接口的超时时间。
  
