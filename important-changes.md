@@ -1,7 +1,7 @@
 ## 重要变更
 * 2017-08-24 v1.3.0
-  1. 取消全局interceptXhr设置，改为知道单个interceptor配置项ajax=true|false
-  2. 新增上传参数解析
+  1. 取消全局interceptXhr设置，改为知道单个interceptor配置项ajax=true|false。
+  2. 新增上传参数解析。
   3. 接口数据缓存由单纯的boolean改为可配置为有效期毫秒数。
 
 
