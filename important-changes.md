@@ -2,6 +2,8 @@
 * 2017-08-24 v1.3.0
   1. 取消全局interceptXhr设置，改为知道单个interceptor配置项ajax=true|false
   2. 新增上传参数解析
+
+
   
 * 2017-08-10 v1.2.9
   1. 新增stage: response 作为最终流程。
