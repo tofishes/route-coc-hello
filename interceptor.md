@@ -16,6 +16,7 @@ moudle.exports = {
     'cache': false,
     'timeout': 1000,
     'series': false,
+    'ajax': true,
     query(req, res) {
       return {
         'pageSize': 20,
@@ -50,3 +51,4 @@ moudle.exports = {
    ```
    
 5. 无view配置项。
+6. 在v1.3.0版本后新增 `ajax` 配置项，仅为true时表示拦截器对ajax请求有效。
