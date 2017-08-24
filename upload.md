@@ -21,3 +21,15 @@ stage.after('upload', (req, res, next) => {
 ```
 
 设置multiparty参数(可用参数参见[multiparty文档](https://github.com/pillarjs/multiparty#multipartyform))：
+
+```
+stage.before('upload', (req, res, next) => {  
+  req.uploadOptions = {
+    'encoding': 'utf-8',
+    'maxFilesSize': 10 * 1024 * 1024, // 10M, 单位 bytes
+    'uploadDir': '/temp/dir'
+  };
+
+  next();
+});
+```
