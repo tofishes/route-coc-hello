@@ -46,6 +46,7 @@ route-coc已经规定好 拦截器-路由-页面渲染 这样的一个流程，�
   "pageInfo",
   "initHttpRequest",
   "matchRouter",
+  "upload",
   "handleInterceptor",
   "handleRouter",
   "requestProxy",
