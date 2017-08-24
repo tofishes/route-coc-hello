@@ -19,3 +19,5 @@ stage.after('upload', (req, res, next) => {
   next();
 });
 ```
+
+设置multiparty参数(可用参数参见[multiparty文档](https://github.com/pillarjs/multiparty#multipartyform))：
