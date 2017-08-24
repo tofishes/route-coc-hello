@@ -79,8 +79,6 @@ stage.get('routers');
 stage.get('views');
 // 获取配置的禁止自动渲染模板的目录
 stage.get('viewExclude');
-// 获取是否允许拦截器拦截ajax请求
-stage.get('interceptXhr');
 // 获取接口数据缓存方法
 stage.get('apiDataCache');
 // 获取接口数据名方法
