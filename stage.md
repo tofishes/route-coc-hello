@@ -5,8 +5,8 @@ Stage是流程实现类，非常核心的一个功能类。它负责执行一些
 [
   "pageInfo",
   "matchRouter",
-  "initHttpRequest",
   "upload",
+  "initHttpRequest",
   "handleInterceptor",
   "handleRouter",
   "requestProxy",
