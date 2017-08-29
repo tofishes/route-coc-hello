@@ -1,6 +1,6 @@
 ## View渲染
 
-route-coc的默认引擎为nunjucks，文件后缀为.njk, 官网文档地址为：<https://mozilla.github.io/nunjucks/>。
+route-coc的默认引擎为nunjucks，文件后缀为.njk， 官网文档地址为：<https://mozilla.github.io/nunjucks/>。
 
 ### 多引擎支持
 
