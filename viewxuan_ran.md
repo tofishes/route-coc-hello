@@ -1,10 +1,6 @@
 ## View渲染
 
-鉴于swig渲染引擎已经deprecated，原作者也不再继续维护，因此route-coc更换默认引擎为nunjucks，官网地址为：<https://mozilla.github.io/nunjucks/>。
-
-nunjucks具有和swig相似的语法，能够比较好的过渡。
-
-官方nunjucks包有一点不兼容route-coc，因此route-coc实际使用的包为 nunjucks-route-coc，此包用于适配route-coc，并且完全和官方包功能一致。
+route-coc的默认引擎为nunjucks，官网文档地址为：<https://mozilla.github.io/nunjucks/>。
 
 ### 多引擎支持
 
