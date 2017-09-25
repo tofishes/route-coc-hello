@@ -6,7 +6,7 @@ route-coc的默认引擎为nunjucks，文件后缀为.njk， 官网文档地址�
 
 route-coc对多引擎的支持做法是：~~借用express的API。~~
 
-v1.3.2版本后，可以使用stage实例方法来设置多引擎。同时也支持express app.engine方式。
+v1.3.2版本后，可以使用stage.engine实例方法来设置多引擎。同时也支持express app.engine方式。一个项目有多个stage实例且各个stage需要不同模板引擎时，只能通过stage.engine来设置。
 
 用swig示例：
   ```
