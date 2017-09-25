@@ -60,14 +60,14 @@ stage.engine('marko', (filePath, data, callback) => {
 若不想router配置的view指定后缀名，则需取代nunjucks作为默认引擎，还是用swig示例：
 ```
   ...
-  
+ 
   const app = express();
-  // 注册swig后缀使用swig的渲染方法
-  app.engine('swig', swig.renderFile);
-  // 设置默认引擎后缀，必须在coc(app)前设置
-  app.set('view engine', 'swig');
-  
   const stage = coc(app);
+  
+  // 注册swig后缀使用swig的渲染方法
+  stage.engine('swig', swig.renderFile);
+  // 设置默认引擎后缀，必须在coc(app)前设置
+  stage.set('view engine', 'swig');
   
   ...
 ```
