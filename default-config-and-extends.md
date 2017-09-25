@@ -60,7 +60,7 @@ nunjucks env对象的获取使用 `const nunjucksEnv = stage.get('nunjucksEnv');
 * `res.forward(routePath) `
   服务器内跳转，例如 res.forward('/news/100')，内部会跳转到 '/news/:id' 的route
   v1.2.9版本后，可以跳转到一个外部网址，例如 res.forward('http://other.com')
-* `res.disableCache(true|false)` 设置响应的缓存头
+* `res.disableCache(true|false)` 设置响应的缓存头，若为true，则设置no-cache响应头
 * `next(error)`
   下一个流程，是对express next的一个封装。stage内使用这个next()跳转流程。
   next.origin() 是 express next()。 参数error为可选。
