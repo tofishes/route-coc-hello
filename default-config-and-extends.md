@@ -11,11 +11,13 @@ app.use(cookieParser());
 // nginx代理转发后，要获取正确host需要：
 app.set('trust proxy', 'loopback');
 app.set('query parser', 'extended');
-// 设置引擎默认后缀
+```
+~~// 设置引擎默认后缀
 if (!app.get('view engine')) {
   app.set('view engine', 'njk');
-}
-```
+}~~
+
+**update:** v1.3.2版本后，由stage.set('view engine')来管理默认模板引擎
 
 #### Nunjucks模板默认设置
 
