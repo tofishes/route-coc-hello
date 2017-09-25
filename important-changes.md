@@ -16,4 +16,7 @@
 * 2017-08-29 v1.3.2
   1. res.goto 用于取代res.redirect 推荐使用该方法。
 
+* 2017-09-25 v1.3.7
+  1. res.goto 用于取代res.redirect 推荐使用该方法。
+
 
