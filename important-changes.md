@@ -13,4 +13,7 @@
   4. res.forward 能够转到任何外域名网址(http://或https://开头的完整地址)。
   5. 以前配置两个路由：/news/publish 和 /news/:id ，可能会发生冲突，现在不会了：无参路由会优先匹配。
 
+* 2017-08-29 v1.3.2
+  1. res.goto 用于取代res.redirect 推荐使用该方法。
+
 
