@@ -152,3 +152,4 @@ moudle.exports = {
   
   推荐尽量避免使用串行的方式执行接口请求。
   
+  **update:** v1.3.2版本后，当router有多个api配置且series=true，那么按api顺序，前面的api结果在后面的api的Function类型的配置项（例如 query(), body(), handle()等）可以通过res.apiData来获取  
