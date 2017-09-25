@@ -14,7 +14,7 @@
   5. 以前配置两个路由：/news/publish 和 /news/:id ，可能会发生冲突，现在不会了：无参路由会优先匹配。
 
 * 2017-08-29 v1.3.2
-  1. res.goto 用于取代res.redirect 推荐使用该方法。
+  1. stage实例增加.engine()方法，取代express app.engine()。
 
 * 2017-09-25 v1.3.7
   1. res.goto 用于取代res.redirect 推荐使用该方法。
