@@ -66,7 +66,7 @@ stage.engine('marko', (filePath, data, callback) => {
   
   // 注册swig后缀使用swig的渲染方法
   stage.engine('swig', swig.renderFile);
-  // 设置默认引擎后缀，必须在coc(app)前设置
+  // 设置默认引擎后缀
   stage.set('view engine', 'swig');
   
   ...
