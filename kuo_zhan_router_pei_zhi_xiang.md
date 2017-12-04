@@ -8,8 +8,8 @@
     // 为配置项增加默认参数的配置
     if (defaultParam) {
       req.param = Object.assign({}, defaultParam, req.param);
-      Object.assign(req.query, req.param);
-      Object.assign(req.body, req.param);
+      req.query = Object.assign({}, req.param, req.query);
+      req.body = Object.assign({}, req.param, req.body);
     }
 
     next();
